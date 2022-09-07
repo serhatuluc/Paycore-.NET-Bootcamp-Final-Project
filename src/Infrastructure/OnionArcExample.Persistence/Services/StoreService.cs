@@ -3,7 +3,7 @@ using NHibernate;
 using OnionArcExample.Application;
 using OnionArcExample.Domain;
 using System;
-
+using System.Threading.Tasks;
 
 namespace OnionArcExample.Persistence
 {
@@ -21,11 +21,11 @@ namespace OnionArcExample.Persistence
             hibernateRepository = new HibernateRepository<Store>(session);
         }
 
-        public BaseResponse<StoreDto> IncrementInventory(int id)
+        public async Task<BaseResponse<StoreDto>> IncrementInventory(int id)
         {
             try
             {
-                var tempEntity = hibernateRepository.GetById(id);
+                var tempEntity = await hibernateRepository.GetById(id);
                 if (tempEntity is null)
                 {
                     return new BaseResponse<StoreDto>("Record Not Found");
@@ -34,8 +34,8 @@ namespace OnionArcExample.Persistence
                 tempEntity.Inventory++;
 
                 hibernateRepository.BeginTransaction();
-                hibernateRepository.Update(tempEntity);
-                hibernateRepository.Commit();
+                await hibernateRepository .Update(tempEntity);
+                await hibernateRepository .Commit();
                 hibernateRepository.CloseTransaction();
 
                 var resource = mapper.Map<Store, StoreDto>(tempEntity);
@@ -43,7 +43,7 @@ namespace OnionArcExample.Persistence
             }
             catch (Exception ex)
             {
-                hibernateRepository.Rollback();
+                await hibernateRepository .Rollback();
                 hibernateRepository.CloseTransaction();
                 return new BaseResponse<StoreDto>(ex.Message);
             };

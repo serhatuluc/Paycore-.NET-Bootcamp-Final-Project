@@ -41,7 +41,6 @@ namespace OnionArcExample.WebAPI
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
 
-
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
@@ -50,7 +49,7 @@ namespace OnionArcExample.WebAPI
             }
 
             // middleware
-
+            app.UseMiddleware<ExceptionMiddleware>();
 
             app.UseHttpsRedirection();
 
@@ -59,7 +58,6 @@ namespace OnionArcExample.WebAPI
             app.UseRouting();
 
             app.UseAuthorization();
-
 
             app.UseEndpoints(endpoints =>
             {

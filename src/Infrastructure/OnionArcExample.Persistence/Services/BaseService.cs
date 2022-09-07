@@ -5,6 +5,7 @@ using OnionArcExample.Domain;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
 
 namespace OnionArcExample.Persistence
 {
@@ -31,65 +32,65 @@ namespace OnionArcExample.Persistence
             return new BaseResponse<IEnumerable<Dto>>(result);
         }
 
-        public virtual BaseResponse<Dto> GetById(int id)
+        public virtual async Task<BaseResponse<Dto>> GetById(int id)
         {
-            var tempEntity = hibernateRepository.GetById(id);
+            var tempEntity = await hibernateRepository.GetById(id);
             var result = mapper.Map<Entity, Dto>(tempEntity);
             return new BaseResponse<Dto>(result);
         }
 
-        public virtual BaseResponse<Dto> Insert(Dto insertResource)
+        public virtual async Task<BaseResponse<Dto>> Insert(Dto insertResource)
         {
             try
             {
                 var tempEntity = mapper.Map<Dto, Entity>(insertResource);
 
                 hibernateRepository.BeginTransaction();
-                hibernateRepository.Save(tempEntity);
-                hibernateRepository.Commit();
+                await hibernateRepository.Save(tempEntity);
+                await hibernateRepository.Commit();
 
                 hibernateRepository.CloseTransaction();
                 return new BaseResponse<Dto>(mapper.Map<Entity, Dto>(tempEntity));
             }
             catch (Exception ex)
             {
-                hibernateRepository.Rollback();
+                await hibernateRepository .Rollback();
                 hibernateRepository.CloseTransaction();
                 return new BaseResponse<Dto>(ex.Message);
             }
 
         }
 
-        public virtual BaseResponse<Dto> Remove(int id)
+        public virtual async Task<BaseResponse<Dto>> Remove(int id)
         {
             try
             {
-                var tempEntity = hibernateRepository.GetById(id);
+                var tempEntity = await hibernateRepository.GetById(id);
                 if (tempEntity is null)
                 {
                     return new BaseResponse<Dto>("Record Not Found");
                 }
 
                 hibernateRepository.BeginTransaction();
-                hibernateRepository.Delete(id);
-                hibernateRepository.Commit();
+                await hibernateRepository .Delete(id);
+                await hibernateRepository .Commit();
                 hibernateRepository.CloseTransaction();
 
                 return new BaseResponse<Dto>(mapper.Map<Entity, Dto>(tempEntity));
             }
             catch (Exception ex)
             {
-                hibernateRepository.Rollback();
+                await hibernateRepository.Rollback();
                 hibernateRepository.CloseTransaction();
                 return new BaseResponse<Dto>(ex.Message);
             }
         }
 
-        public virtual BaseResponse<Dto> Update(int id, Dto updateResource)
+        public virtual async Task<BaseResponse<Dto>> Update(int id, Dto updateResource)
         {
             try
             {
-                var tempEntity = hibernateRepository.GetById(id);
+                var tempEntity = await hibernateRepository .GetById(id);
                 if (tempEntity is null)
                 {
                     return new BaseResponse<Dto>("Record Not Found");
@@ -99,8 +100,8 @@ namespace OnionArcExample.Persistence
                 var entity = mapper.Map<Dto,Entity>(updateResource, tempEntity);
 
                 hibernateRepository.BeginTransaction();
-                hibernateRepository.Update(entity);
-                hibernateRepository.Commit();
+                await hibernateRepository.Update(entity);
+                await hibernateRepository .Commit();
                 hibernateRepository.CloseTransaction();
 
                 var resource = mapper.Map<Entity, Dto>(entity);
@@ -108,7 +109,7 @@ namespace OnionArcExample.Persistence
             }
             catch (Exception ex)
             {
-                hibernateRepository.Rollback();
+                await hibernateRepository .Rollback();
                 hibernateRepository.CloseTransaction();
                 return new BaseResponse<Dto>(ex.Message);
             }

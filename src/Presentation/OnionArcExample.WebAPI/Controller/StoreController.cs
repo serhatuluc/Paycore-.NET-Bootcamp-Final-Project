@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using OnionArcExample.Application;
 using OnionArcExample.Domain;
+using System.Threading.Tasks;
 
 namespace OnionArcExample.WebAPI
 {
@@ -22,9 +23,9 @@ namespace OnionArcExample.WebAPI
         }
 
         [HttpPost("Increment")]
-        public BaseResponse<StoreDto> Increment(int id)
+        public async Task<BaseResponse<StoreDto>> Increment(int id)
         {
-            var response = storeService.IncrementInventory(id);
+            var response = await storeService.IncrementInventory(id);
             return response;
         }
     }

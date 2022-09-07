@@ -1,8 +1,10 @@
 ﻿
+using System.Threading.Tasks;
+
 namespace OnionArcExample.Application
 {
     public interface ITokenService
     {
-        BaseResponse<TokenResponse> GenerateToken(TokenRequest tokenRequest);
+        Task<BaseResponse<TokenResponse>> GenerateToken(TokenRequest tokenRequest);
     }
 }

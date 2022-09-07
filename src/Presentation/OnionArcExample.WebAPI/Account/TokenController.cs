@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using OnionArcExample.Application;
+using System.Threading.Tasks;
 
 namespace OnionArcExample.WebAPI
 {
@@ -16,9 +17,9 @@ namespace OnionArcExample.WebAPI
 
 
         [HttpPost("Login")]
-        public BaseResponse<TokenResponse> Login([FromBody] TokenRequest request)
+        public async Task<BaseResponse<TokenResponse>> Login([FromBody] TokenRequest request)
         {
-            var response = tokenService.GenerateToken(request);
+            var response = await tokenService.GenerateToken(request);
             return response;
         }
 

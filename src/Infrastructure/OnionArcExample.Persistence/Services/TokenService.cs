@@ -9,6 +9,7 @@ using System.IdentityModel.Tokens.Jwt;
 using System.Linq;
 using System.Security.Claims;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace OnionArcExample.Persistence
 {
@@ -28,7 +29,7 @@ namespace OnionArcExample.Persistence
             hibernateRepository = new HibernateRepository<Account>(session);
         }
 
-        public BaseResponse<TokenResponse> GenerateToken(TokenRequest tokenRequest)
+        public async Task<BaseResponse<TokenResponse>> GenerateToken(TokenRequest tokenRequest)
         {
             try
             {
@@ -56,14 +57,14 @@ namespace OnionArcExample.Persistence
                     account.LastActivity = now;
 
                     hibernateRepository.BeginTransaction();
-                    hibernateRepository.Update(account);
-                    hibernateRepository.Commit();
+                    await hibernateRepository .Update(account);
+                    await hibernateRepository .Commit();
                     hibernateRepository.CloseTransaction();
                 }
                 catch (Exception ex)
                 {
                     Log.Error("GenerateToken Update Account LastActivity:", ex);
-                    hibernateRepository.Rollback();
+                    await hibernateRepository .Rollback();
                     hibernateRepository.CloseTransaction();
                 }
 

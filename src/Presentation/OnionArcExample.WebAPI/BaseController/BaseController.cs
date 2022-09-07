@@ -1,7 +1,7 @@
 ﻿using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
 using OnionArcExample.Domain;
-
+using System.Threading.Tasks;
 
 namespace OnionArcExample.WebAPI
 {   
@@ -34,9 +34,9 @@ namespace OnionArcExample.WebAPI
         }
 
         [HttpGet("{id}")]
-        public virtual IActionResult GetById(int id)
+        public virtual async Task<IActionResult> GetById(int id)
         {
-            var result = baseService.GetById(id);
+            var result = await baseService.GetById(id);
             if (!result.Success)
             {
                 return BadRequest(result);
@@ -50,9 +50,9 @@ namespace OnionArcExample.WebAPI
         }
 
         [HttpPost]
-        public virtual IActionResult Create([FromBody] Dto dto)
+        public virtual async Task<IActionResult> Create([FromBody] Dto dto)
         {
-            var result = baseService.Insert(dto);
+            var result = await baseService.Insert(dto);
             if (!result.Success)
             {
                 return BadRequest(result);
@@ -72,9 +72,9 @@ namespace OnionArcExample.WebAPI
 
 
         [HttpPut("{id}")]
-        public virtual IActionResult Update(int id,[FromBody]Dto dto)
+        public virtual async Task<IActionResult> Update(int id,[FromBody]Dto dto)
         {
-            var result = baseService.Update(id,dto);
+            var result = await baseService.Update(id, dto);
             if (!result.Success)
             {
                 return BadRequest(result);
@@ -93,15 +93,15 @@ namespace OnionArcExample.WebAPI
         }
 
         [HttpDelete]
-        public virtual IActionResult Update(int id)
+        public virtual async Task<IActionResult> Update(int id)
         {
-            var result = baseService.Remove(id);
+            var result = await baseService .Remove(id);
             if (result.Success)
             {
                 return Ok(result);
             }
 
-            return BadRequest();
+            return BadRequest(result);
         }
     }
 }

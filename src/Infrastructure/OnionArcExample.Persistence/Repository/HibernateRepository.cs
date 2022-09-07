@@ -1,9 +1,11 @@
 ﻿using NHibernate;
+using NHibernate.Linq;
 using OnionArcExample.Application;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
+using System.Threading.Tasks;
 
 namespace OnionArcExample.Persistence
 {
@@ -17,21 +19,21 @@ namespace OnionArcExample.Persistence
             this.session = session;
         }
 
-        public IQueryable<Entity> Entities => session.Query<Entity>();
+        public  IQueryable<Entity> Entities => session.Query<Entity>();
 
         public void BeginTransaction()
         {
             transaction = session.BeginTransaction();
         }
 
-        public void Commit()
+        public async Task Commit()
         {
-            transaction.Commit();
+            await transaction.CommitAsync();
         }
 
-        public void Rollback()
+        public async Task Rollback()
         {
-            transaction.Rollback();
+            await transaction.RollbackAsync();
         }
 
         public void CloseTransaction()
@@ -43,33 +45,40 @@ namespace OnionArcExample.Persistence
             }
         }
 
-        public void Save(Entity entity)
+        public async Task Save(Entity entity)
         {
-            session.Save(entity);
+            await session.SaveAsync(entity);
         }
 
-        public void Update(Entity entity)
+        public async Task Update(Entity entity)
         {
-            session.Update(entity);
+            await session.UpdateAsync(entity);
         }
 
-        public void Delete(int id)
+        public async Task Delete(int id)
         {
             var entity = GetById(id);
             if (entity != null)
             {
-                session.Delete(entity);
+                await session.DeleteAsync(entity);
             }
         }
 
-        public List<Entity> GetAll()
+        public async Task<List<Entity>> GetAll()
         {
             return session.Query<Entity>().ToList();
         }
 
-        public Entity GetById(int id)
+        public async Task<List<Entity>> GetAll(Expression<Func<Entity, bool>>? expression = null)
         {
-            var entity = session.Get<Entity>(id);
+            return expression == null
+                ? await session.Query<Entity>().ToListAsync()
+                : await session.Query<Entity>().Where(expression).ToListAsync();
+        }
+
+        public async Task<Entity> GetById(int id)
+        {
+            var entity = await session.GetAsync<Entity>(id);
             return entity;
         }
 

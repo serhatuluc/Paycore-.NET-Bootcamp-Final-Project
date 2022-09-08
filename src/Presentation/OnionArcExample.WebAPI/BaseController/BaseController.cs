@@ -19,9 +19,9 @@ namespace OnionArcExample.WebAPI
 
         [HttpGet]
         [ResponseCache(Duration = 60)]
-        public virtual IActionResult GetAll()
+        public virtual async Task<IActionResult> GetAll()
         {
-            var result = baseService.GetAll();
+            var result = await baseService.GetAll();
             if (!result.Success)
             {
                 return BadRequest(result);

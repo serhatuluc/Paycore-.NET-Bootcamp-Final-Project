@@ -1,8 +1,9 @@
-﻿namespace OnionArcExample.Domain
+﻿using OnionArcExample.Domain.Entities;
+
+namespace OnionArcExample.Domain
 {
-    public class Author 
+    public class Author:BaseEntity
     {
-        public virtual int Id { get; set; }
         public virtual string FirstName { get; set; }
         public virtual string LastName { get; set; }
     }

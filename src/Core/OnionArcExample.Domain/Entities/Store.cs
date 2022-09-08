@@ -1,8 +1,9 @@
-﻿namespace OnionArcExample.Domain
+﻿using OnionArcExample.Domain.Entities;
+
+namespace OnionArcExample.Domain
 {
-    public class Store
-    {
-        public virtual int Id { get; set; }
+    public class Store:BaseEntity
+    { 
         public virtual string Name { get; set; }
         public virtual string Address { get; set; }
         public virtual int Inventory { get; set; }

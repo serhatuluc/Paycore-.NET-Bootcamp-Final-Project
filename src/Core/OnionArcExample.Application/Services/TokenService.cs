@@ -1,6 +1,5 @@
 ﻿using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
-using NHibernate;
 using OnionArcExample.Application;
 using OnionArcExample.Application.Interfaces.Repositories;
 using OnionArcExample.Domain;
@@ -17,13 +16,11 @@ namespace OnionArcExample.Persistence
 
     public class TokenService : ITokenService
     {
-        protected readonly ISession session;
         protected readonly ITokenRepository hibernateRepository;
         private readonly JwtConfig jwtConfig;
 
-        public TokenService(ISession session, IOptionsMonitor<JwtConfig> jwtConfig, ITokenRepository hibernateRepository)
+        public TokenService(IOptionsMonitor<JwtConfig> jwtConfig, ITokenRepository hibernateRepository)
         {
-            this.session = session;
             this.jwtConfig = jwtConfig.CurrentValue;
             this.hibernateRepository = hibernateRepository;
            
@@ -38,7 +35,8 @@ namespace OnionArcExample.Persistence
                     return new BaseResponse<TokenResponse>("Please enter valid informations.");
                 }
 
-                var account = hibernateRepository.Where(x => x.UserName.Equals(tokenRequest.UserName)).FirstOrDefault();
+                var accounts = await hibernateRepository.GetAll(x => x.UserName.Equals(tokenRequest.UserName));
+                var account = accounts.FirstOrDefault();
                 if (account is null)
                 {
                     return new BaseResponse<TokenResponse>("Please validate your informations that you provided.");
@@ -52,21 +50,9 @@ namespace OnionArcExample.Persistence
                 DateTime now = DateTime.UtcNow;
                 string token = GetToken(account, now);
 
-                try
-                {
-                    account.LastActivity = now;
+                account.LastActivity = now;
 
-                    hibernateRepository.BeginTransaction();
-                    await hibernateRepository .Update(account);
-                    await hibernateRepository .Commit();
-                    hibernateRepository.CloseTransaction();
-                }
-                catch (Exception ex)
-                {
-                    Log.Error("GenerateToken Update Account LastActivity:", ex);
-                    await hibernateRepository .Rollback();
-                    hibernateRepository.CloseTransaction();
-                }
+                await hibernateRepository.Update(account);
 
                 TokenResponse tokenResponse = new TokenResponse
                 {

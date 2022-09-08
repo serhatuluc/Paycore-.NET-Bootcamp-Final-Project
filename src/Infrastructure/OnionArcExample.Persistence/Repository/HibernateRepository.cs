@@ -1,6 +1,8 @@
 ﻿using NHibernate;
 using NHibernate.Linq;
 using OnionArcExample.Application;
+using OnionArcExample.Domain.Entities;
+using Serilog;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace OnionArcExample.Persistence
 {
-    public class HibernateRepository<Entity> : IHibernateRepository<Entity> where Entity : class
+    public class HibernateRepository<Entity> : IRepository<Entity> where Entity : BaseEntity
     {
         private readonly ISession session;
         private ITransaction transaction;
@@ -19,78 +21,72 @@ namespace OnionArcExample.Persistence
             this.session = session;
         }
 
-        public  IQueryable<Entity> Entities => session.Query<Entity>();
-
-        public void BeginTransaction()
+        public async Task Create(Entity entity)
         {
-            transaction = session.BeginTransaction();
-        }
-
-        public async Task Commit()
-        {
-            await transaction.CommitAsync();
-        }
-
-        public async Task Rollback()
-        {
-            await transaction.RollbackAsync();
-        }
-
-        public void CloseTransaction()
-        {
-            if (transaction != null)
+            try
             {
-                transaction.Dispose();
-                transaction = null;
+                transaction = session.BeginTransaction();
+                await session.SaveAsync(entity);
+                transaction.Commit();
             }
-        }
-
-        public async Task Save(Entity entity)
-        {
-            await session.SaveAsync(entity);
-        }
-
-        public async Task Update(Entity entity)
-        {
-            await session.UpdateAsync(entity);
-        }
-
-        public async Task Delete(int id)
-        {
-            var entity = GetById(id);
-            if (entity != null)
+            catch (Exception ex)
             {
+                transaction.Rollback();
+                Log.Error(ex, "Vehicle Insert Error");
+            }
+            finally
+            {
+                session.Dispose();
+            };
+        }
+
+        public async Task Delete(Entity entity)
+        {
+            try
+            {
+                transaction = session.BeginTransaction();
                 await session.DeleteAsync(entity);
+                transaction.Commit();
             }
+            catch (Exception ex)
+            {
+
+                Log.Error(ex, "Vehicle Delete Error");
+            }
+            finally
+            {
+                session.Dispose();
+            };
         }
 
-        public async Task<List<Entity>> GetAll()
+        public async Task<IEnumerable<Entity>> GetAll(Expression<Func<Entity, bool>> expression = null)
         {
-            return session.Query<Entity>().ToList();
-        }
-
-        public async Task<List<Entity>> GetAll(Expression<Func<Entity, bool>>? expression = null)
-        {
-            return expression == null
-                ? await session.Query<Entity>().ToListAsync()
-                : await session.Query<Entity>().Where(expression).ToListAsync();
+            var listOfcontainers = await session.Query<Entity>().ToListAsync();
+            return listOfcontainers;
         }
 
         public async Task<Entity> GetById(int id)
         {
-            var entity = await session.GetAsync<Entity>(id);
-            return entity;
+            return await session.Query<Entity>().FirstOrDefaultAsync(e => e.Id == id);
         }
 
-        public IEnumerable<Entity> Where(Expression<Func<Entity, bool>> where)
+        public async Task Update(Entity entity)
         {
-            return session.Query<Entity>().Where(where).AsQueryable();
+            try
+            {
+                transaction = session.BeginTransaction();
+                await session.UpdateAsync(entity);
+                transaction.Commit();
+            }
+            catch (Exception ex)
+            {
+                transaction.Rollback();
+                Log.Error(ex, "Vehicle Update Error");
+            }
+            finally
+            {
+                session.Dispose();
+            }
         }
-
-        public IEnumerable<Entity> Find(Expression<Func<Entity, bool>> expression)
-        {
-            return session.Query<Entity>().Where(expression).ToList();
-        }
-
     }
 }

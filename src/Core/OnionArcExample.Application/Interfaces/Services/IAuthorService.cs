@@ -1,6 +1,4 @@
-﻿
-
-using OnionArcExample.Domain;
+﻿using OnionArcExample.Domain;
 
 namespace OnionArcExample.Application
 {

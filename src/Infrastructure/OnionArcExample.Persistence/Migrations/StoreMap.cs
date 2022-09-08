@@ -10,6 +10,7 @@ namespace OnionArcExample.Persistence
     {
         public StoreMap()
         {
+
             Id(x => x.Id, x =>
             {
                 x.Type(NHibernateUtil.Int32);
@@ -17,7 +18,6 @@ namespace OnionArcExample.Persistence
                 x.UnsavedValue(0);
                 x.Generator(Generators.Increment);
             });
-
             Property(b => b.Name, x =>
             {
                 x.Length(50);
@@ -37,7 +37,7 @@ namespace OnionArcExample.Persistence
                 x.NotNullable(true);
             });
 
-
+           
             Table("store");
         }
     }

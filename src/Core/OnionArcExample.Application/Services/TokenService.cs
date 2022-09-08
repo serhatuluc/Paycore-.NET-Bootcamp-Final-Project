@@ -11,7 +11,7 @@ using System.Security.Claims;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace OnionArcExample.Persistence
+namespace OnionArcExample.Application
 {
 
     public class TokenService : ITokenService

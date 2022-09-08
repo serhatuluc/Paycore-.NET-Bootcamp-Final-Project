@@ -1,4 +1,5 @@
 ﻿using OnionArcExample.Domain.Entities;
+using System.Collections.Generic;
 
 namespace OnionArcExample.Domain
 {

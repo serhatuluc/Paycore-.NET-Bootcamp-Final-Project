@@ -5,7 +5,7 @@ using OnionArcExample.Domain;
 using System;
 using System.Threading.Tasks;
 
-namespace OnionArcExample.Persistence
+namespace OnionArcExample.Application
 {
     public class StoreService : BaseService<StoreDto, Store>, IStoreService
     {

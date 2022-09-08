@@ -7,7 +7,7 @@ using System.Collections.Generic;
 using System.Linq.Expressions;
 using System.Threading.Tasks;
 
-namespace OnionArcExample.Persistence
+namespace OnionArcExample.Application
 {
     public abstract class BaseService<Dto, Entity> : IBaseService<Dto, Entity> where Entity : BaseEntity
     {

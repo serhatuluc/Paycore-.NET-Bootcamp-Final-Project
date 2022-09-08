@@ -1,10 +1,11 @@
 ﻿using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.IdentityModel.Tokens;
+using OnionArcExample.Application.DependencyContainers;
 using System;
 using System.Text;
 
-namespace OnionArcExample.WebAPI
+namespace OnionArcExample.Application
 {
     public static class ExtensionCustomizeAuthentication
     {
@@ -21,10 +22,10 @@ namespace OnionArcExample.WebAPI
                 x.TokenValidationParameters = new TokenValidationParameters
                 {
                     ValidateIssuer = true, // default True
-                    ValidIssuer = Startup.JwtConfig.Issuer,
+                    ValidIssuer = DependencyContainer.JwtConfig.Issuer,
                     ValidateIssuerSigningKey = true,
-                    IssuerSigningKey = new SymmetricSecurityKey(Encoding.ASCII.GetBytes(Startup.JwtConfig.Secret)),
-                    ValidAudience = Startup.JwtConfig.Audience,
+                    IssuerSigningKey = new SymmetricSecurityKey(Encoding.ASCII.GetBytes(DependencyContainer.JwtConfig.Secret)),
+                    ValidAudience = DependencyContainer.JwtConfig.Audience,
                     ValidateAudience = true, // default True
                     ValidateLifetime = true,
                     ClockSkew = TimeSpan.FromMinutes(2)

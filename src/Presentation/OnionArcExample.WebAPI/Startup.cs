@@ -4,8 +4,8 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using OnionArcExample.Application;
-using OnionArcExample.Application.Interfaces.Repositories;
-using OnionArcExample.Persistence.Repository;
+using OnionArcExample.Application.DependencyContainers;
+using OnionArcExample.Persistence;
 
 namespace OnionArcExample.WebAPI
 {
@@ -15,29 +15,16 @@ namespace OnionArcExample.WebAPI
         {
             Configuration = configuration;
         }
-        public static JwtConfig JwtConfig { get; private set; }
-
+     
         public IConfiguration Configuration { get; }
 
         public void ConfigureServices(IServiceCollection services)
         {
-            // hibernate
-            var connStr = Configuration.GetConnectionString("PostgreSqlConnection");
-            services.AddNHibernatePosgreSql(connStr);
-          //  services.AddTransient(typeof(IHibernateRepository<>), typeof(IHibernateRepository<>));
-            services.AddScoped<IAccountRepository,AccountRepository>();
-            services.AddScoped<IAuthorRepository,AuthorRepository>();
-            services.AddScoped<IStoreRepository,StoreRepository>();
-            services.AddScoped<ITokenRepository,TokenRepository>();
-
-            // Configure JWT Bearer
-            JwtConfig = Configuration.GetSection("JwtConfig").Get<JwtConfig>();
-            services.Configure<JwtConfig>(Configuration.GetSection("JwtConfig"));
+            services.AddApplicationServices(Configuration);
+            services.AddInfrastructureServices(Configuration);
 
             // service
             services.AddResponseCaching();
-            services.AddServices();
-            services.AddJwtBearerAuthentication();
             services.AddCustomizeSwagger();
             services.AddControllers();
 

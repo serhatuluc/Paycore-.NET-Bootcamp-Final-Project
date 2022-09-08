@@ -7,19 +7,19 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{E4893060-FC2
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{C32602B2-A6E9-4617-81F3-C65364025CBB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnionArcExample.Domain", "src\Core\OnionArcExample.Domain\OnionArcExample.Domain.csproj", "{D397BE97-CFF3-4E45-B85A-E32D9FF210B4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OnionArcExample.Domain", "src\Core\OnionArcExample.Domain\OnionArcExample.Domain.csproj", "{D397BE97-CFF3-4E45-B85A-E32D9FF210B4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnionArcExample.Application", "src\Core\OnionArcExample.Application\OnionArcExample.Application.csproj", "{D72DC5C6-4C5B-4E16-AF15-B2CF590275E4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OnionArcExample.Application", "src\Core\OnionArcExample.Application\OnionArcExample.Application.csproj", "{D72DC5C6-4C5B-4E16-AF15-B2CF590275E4}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{1EFF9021-206F-45ED-8D8D-04DF88E764F3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnionArcExample.Persistence", "src\Infrastructure\OnionArcExample.Persistence\OnionArcExample.Persistence.csproj", "{E337C6FF-0DE1-4757-AF55-AE5E65B3D062}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OnionArcExample.Persistence", "src\Infrastructure\OnionArcExample.Persistence\OnionArcExample.Persistence.csproj", "{E337C6FF-0DE1-4757-AF55-AE5E65B3D062}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{B0BDCBD4-BA35-4E47-AB74-BD40A498ABD0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnionArcExample.WebAPI", "src\Presentation\OnionArcExample.WebAPI\OnionArcExample.WebAPI.csproj", "{A9B1A8FE-33C3-4A46-8BC0-5979003D9B05}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OnionArcExample.WebAPI", "src\Presentation\OnionArcExample.WebAPI\OnionArcExample.WebAPI.csproj", "{A9B1A8FE-33C3-4A46-8BC0-5979003D9B05}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnionArcExample.Infrastructure", "src\Infrastructure\OnionArcExample.Infrastructure\OnionArcExample.Infrastructure.csproj", "{0E91BCFC-3B3B-4B0F-8AB9-CAEA751ECA9E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OnionArcExample.Infrastructure", "src\Infrastructure\OnionArcExample.Infrastructure\OnionArcExample.Infrastructure.csproj", "{0E91BCFC-3B3B-4B0F-8AB9-CAEA751ECA9E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

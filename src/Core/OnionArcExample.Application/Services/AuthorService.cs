@@ -3,7 +3,7 @@ using OnionArcExample.Application;
 using OnionArcExample.Application.Interfaces.Repositories;
 using OnionArcExample.Domain;
 
-namespace OnionArcExample.Persistence
+namespace OnionArcExample.Application
 {
     public class AuthorService : BaseService<AuthorDto, Author>, IAuthorService
     {

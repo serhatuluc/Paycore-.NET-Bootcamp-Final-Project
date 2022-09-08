@@ -5,7 +5,7 @@ using NHibernate.Dialect;
 using NHibernate.Mapping.ByCode;
 using OnionArcExample.Persistence;
 
-namespace OnionArcExample.WebAPI
+namespace OnionArcExample.Persistence
 {
     public static class ExtensionNHibernate
     {

@@ -2,6 +2,7 @@
 using Microsoft.IdentityModel.Tokens;
 using NHibernate;
 using OnionArcExample.Application;
+using OnionArcExample.Application.Interfaces.Repositories;
 using OnionArcExample.Domain;
 using Serilog;
 using System;
@@ -17,16 +18,15 @@ namespace OnionArcExample.Persistence
     public class TokenService : ITokenService
     {
         protected readonly ISession session;
-        protected readonly IHibernateRepository<Account> hibernateRepository;
+        protected readonly ITokenRepository hibernateRepository;
         private readonly JwtConfig jwtConfig;
 
-        public TokenService(ISession session, IOptionsMonitor<JwtConfig> jwtConfig)
+        public TokenService(ISession session, IOptionsMonitor<JwtConfig> jwtConfig, ITokenRepository hibernateRepository)
         {
             this.session = session;
             this.jwtConfig = jwtConfig.CurrentValue;
-            
-
-            hibernateRepository = new HibernateRepository<Account>(session);
+            this.hibernateRepository = hibernateRepository;
+           
         }
 
         public async Task<BaseResponse<TokenResponse>> GenerateToken(TokenRequest tokenRequest)

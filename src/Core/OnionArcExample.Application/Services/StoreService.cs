@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using NHibernate;
 using OnionArcExample.Application;
+using OnionArcExample.Application.Interfaces.Repositories;
 using OnionArcExample.Domain;
 using System;
 using System.Threading.Tasks;
@@ -11,14 +12,13 @@ namespace OnionArcExample.Persistence
     {
         protected readonly ISession session;
         protected readonly IMapper mapper;
-        protected readonly IHibernateRepository<Store> hibernateRepository;
+        protected readonly IStoreRepository hibernateRepository;
 
-        public StoreService(ISession session, IMapper mapper) : base(session, mapper)
+        public StoreService(ISession session, IMapper mapper,IStoreRepository hibernateRepository) : base(session, mapper,hibernateRepository)
         {
             this.session = session;
             this.mapper = mapper;
-
-            hibernateRepository = new HibernateRepository<Store>(session);
+            this.hibernateRepository = hibernateRepository;
         }
 
         public async Task<BaseResponse<StoreDto>> IncrementInventory(int id)

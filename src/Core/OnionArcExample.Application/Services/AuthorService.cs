@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using NHibernate;
 using OnionArcExample.Application;
+using OnionArcExample.Application.Interfaces.Repositories;
 using OnionArcExample.Domain;
 
 namespace OnionArcExample.Persistence
@@ -9,14 +10,14 @@ namespace OnionArcExample.Persistence
     {
         protected readonly ISession session;
         protected readonly IMapper mapper;
-        protected readonly IHibernateRepository<Author> hibernateRepository;
+        protected readonly IAuthorRepository hibernateRepository;
 
-        public AuthorService(ISession session, IMapper mapper) : base(session, mapper)
+        public AuthorService(ISession session, IMapper mapper,IAuthorRepository hibernateRepository) : base(session, mapper,hibernateRepository)
         {
             this.session = session;
             this.mapper = mapper;
+            this.hibernateRepository = hibernateRepository;
 
-            hibernateRepository = new HibernateRepository<Author>(session);
         }
 
      

@@ -4,6 +4,8 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using OnionArcExample.Application;
+using OnionArcExample.Application.Interfaces.Repositories;
+using OnionArcExample.Persistence.Repository;
 
 namespace OnionArcExample.WebAPI
 {
@@ -22,14 +24,18 @@ namespace OnionArcExample.WebAPI
             // hibernate
             var connStr = Configuration.GetConnectionString("PostgreSqlConnection");
             services.AddNHibernatePosgreSql(connStr);
-
-
+          //  services.AddTransient(typeof(IHibernateRepository<>), typeof(IHibernateRepository<>));
+            services.AddScoped<IAccountRepository,AccountRepository>();
+            services.AddScoped<IAuthorRepository,AuthorRepository>();
+            services.AddScoped<IStoreRepository,StoreRepository>();
+            services.AddScoped<ITokenRepository,TokenRepository>();
 
             // Configure JWT Bearer
             JwtConfig = Configuration.GetSection("JwtConfig").Get<JwtConfig>();
             services.Configure<JwtConfig>(Configuration.GetSection("JwtConfig"));
 
             // service
+            services.AddResponseCaching();
             services.AddServices();
             services.AddJwtBearerAuthentication();
             services.AddCustomizeSwagger();
@@ -52,6 +58,8 @@ namespace OnionArcExample.WebAPI
             app.UseMiddleware<ExceptionMiddleware>();
 
             app.UseHttpsRedirection();
+
+            app.UseResponseCaching();
 
             app.UseAuthentication();
 

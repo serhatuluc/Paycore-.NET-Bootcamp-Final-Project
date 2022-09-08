@@ -18,6 +18,7 @@ namespace OnionArcExample.WebAPI
         }
 
         [HttpGet]
+        [ResponseCache(Duration = 60)]
         public virtual IActionResult GetAll()
         {
             var result = baseService.GetAll();

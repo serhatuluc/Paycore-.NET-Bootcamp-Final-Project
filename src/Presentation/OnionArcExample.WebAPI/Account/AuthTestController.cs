@@ -59,6 +59,5 @@ namespace OnionArcExample.WebAPI
         {
             return "AdminViewer";
         }
-
     }
 }

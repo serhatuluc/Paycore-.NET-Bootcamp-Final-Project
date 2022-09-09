@@ -1,3 +1,5 @@
+using FluentValidation;
+using FluentValidation.AspNetCore;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
@@ -5,7 +7,9 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using OnionArcExample.Application;
 using OnionArcExample.Application.DependencyContainers;
+using OnionArcExample.Application.Validator;
 using OnionArcExample.Persistence;
+using System.ComponentModel;
 
 namespace OnionArcExample.WebAPI
 {
@@ -20,6 +24,10 @@ namespace OnionArcExample.WebAPI
 
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddFluentValidationAutoValidation();
+            services.AddValidatorsFromAssemblyContaining(typeof(AuthorValidator));
+            
+
             services.AddApplicationServices(Configuration);
             services.AddInfrastructureServices(Configuration);
 

@@ -1,4 +1,5 @@
 ﻿using OnionArcExample.Domain;
+using System.Threading.Tasks;
 
 namespace OnionArcExample.Application.Interfaces.Repositories
 {

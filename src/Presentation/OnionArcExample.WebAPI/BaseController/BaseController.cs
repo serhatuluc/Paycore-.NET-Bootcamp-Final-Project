@@ -1,5 +1,4 @@
-﻿using AutoMapper;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using OnionArcExample.Domain;
 using System.Threading.Tasks;
 
@@ -9,12 +8,10 @@ namespace OnionArcExample.WebAPI
     public class BaseController<Dto, Entity> : ControllerBase
     {
         private readonly IBaseService<Dto, Entity> baseService;
-        private readonly IMapper mapper;
 
-        public BaseController(IBaseService<Dto, Entity> baseService, IMapper mapper)
+        public BaseController(IBaseService<Dto, Entity> baseService)
         {
             this.baseService = baseService;
-            this.mapper = mapper;
         }
 
         [HttpGet]

@@ -5,7 +5,6 @@ using OnionArcExample.Domain.Entities;
 using Serilog;
 using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Linq.Expressions;
 using System.Threading.Tasks;
 
@@ -32,7 +31,7 @@ namespace OnionArcExample.Persistence
             catch (Exception ex)
             {
                 transaction.Rollback();
-                Log.Error(ex, "Vehicle Insert Error");
+                Log.Error(ex, "Insert Error");
             }
             finally
             {
@@ -51,7 +50,7 @@ namespace OnionArcExample.Persistence
             catch (Exception ex)
             {
 
-                Log.Error(ex, "Vehicle Delete Error");
+                Log.Error(ex, "Delete Error");
             }
             finally
             {
@@ -81,7 +80,7 @@ namespace OnionArcExample.Persistence
             catch (Exception ex)
             {
                 transaction.Rollback();
-                Log.Error(ex, "Vehicle Update Error");
+                Log.Error(ex, "Update Error");
             }
             finally
             {

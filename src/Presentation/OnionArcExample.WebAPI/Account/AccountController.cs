@@ -10,12 +10,10 @@ namespace OnionArcExample.WebAPI
     public class AccountContoller : BaseController<AccountDto, Account>
     {
         private readonly IAccountService accountService;
-        private readonly IMapper mapper;
 
 
-        public AccountContoller(IAccountService accountService, IMapper mapper) : base(accountService, mapper)
+        public AccountContoller(IAccountService accountService, IMapper mapper) : base(accountService)
         {
-            this.mapper = mapper;
             this.accountService = accountService;
         }
 

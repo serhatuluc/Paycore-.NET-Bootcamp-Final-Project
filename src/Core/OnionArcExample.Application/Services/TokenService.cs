@@ -1,6 +1,5 @@
 ﻿using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
-using OnionArcExample.Application;
 using OnionArcExample.Application.Interfaces.Repositories;
 using OnionArcExample.Domain;
 using Serilog;

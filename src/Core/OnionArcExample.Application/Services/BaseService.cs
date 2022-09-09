@@ -1,10 +1,7 @@
 ﻿using AutoMapper;
-using OnionArcExample.Application;
 using OnionArcExample.Domain;
 using OnionArcExample.Domain.Entities;
-using System;
 using System.Collections.Generic;
-using System.Linq.Expressions;
 using System.Threading.Tasks;
 
 namespace OnionArcExample.Application

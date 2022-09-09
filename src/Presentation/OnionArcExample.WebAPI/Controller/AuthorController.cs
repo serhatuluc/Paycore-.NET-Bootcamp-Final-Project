@@ -12,12 +12,10 @@ namespace OnionArcExample.WebAPI
     {
 
         private readonly IAuthorService authorService;
-        private readonly IMapper mapper;
 
 
-        public AuthorController(IAuthorService authorService, IMapper mapper) : base(authorService, mapper)
+        public AuthorController(IAuthorService authorService, IMapper mapper) : base(authorService)
         {
-            this.mapper = mapper;
             this.authorService = authorService;
         }
     }

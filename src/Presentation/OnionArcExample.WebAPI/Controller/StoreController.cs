@@ -13,12 +13,9 @@ namespace OnionArcExample.WebAPI
     {
 
         private readonly IStoreService storeService;
-        private readonly IMapper mapper;
 
-
-        public StoreController(IStoreService storeService, IMapper mapper) : base(storeService, mapper)
+        public StoreController(IStoreService storeService, IMapper mapper) : base(storeService)
         {
-            this.mapper = mapper;
             this.storeService = storeService;
         }
 

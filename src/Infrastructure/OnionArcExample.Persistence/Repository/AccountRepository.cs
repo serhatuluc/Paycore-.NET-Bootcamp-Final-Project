@@ -5,7 +5,7 @@ using OnionArcExample.Domain;
 
 namespace OnionArcExample.Persistence.Repository
 {
-    public class AccountRepository:HibernateRepository<Account>,IAccountRepository
+    public class AccountRepository:GenericRepository<Account>,IAccountRepository
     {
         private readonly ISession session;
         private ITransaction transaction;

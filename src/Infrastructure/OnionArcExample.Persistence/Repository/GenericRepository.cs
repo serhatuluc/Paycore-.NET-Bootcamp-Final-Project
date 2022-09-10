@@ -10,12 +10,12 @@ using System.Threading.Tasks;
 
 namespace OnionArcExample.Persistence
 {
-    public class HibernateRepository<Entity> : IRepository<Entity> where Entity : BaseEntity
+    public class GenericRepository<Entity> : IGenericRepository<Entity> where Entity : BaseEntity
     {
         private readonly ISession session;
         private ITransaction transaction;
 
-        public HibernateRepository(ISession session)
+        public GenericRepository(ISession session)
         {
             this.session = session;
         }

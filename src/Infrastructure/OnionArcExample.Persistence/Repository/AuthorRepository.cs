@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace OnionArcExample.Persistence.Repository
 {
-    public class AuthorRepository:HibernateRepository<Author>,IAuthorRepository
+    public class AuthorRepository:GenericRepository<Author>,IAuthorRepository
     {
         private readonly ISession session;
         private ITransaction transaction;

@@ -9,10 +9,10 @@ namespace OnionArcExample.Application
     public abstract class BaseService<Dto, Entity> : IBaseService<Dto, Entity> where Entity : BaseEntity
     {
         protected readonly IMapper mapper;
-        protected readonly IRepository<Entity> repository;
+        protected readonly IGenericRepository<Entity> repository;
 
 
-        public BaseService(IMapper mapper,IRepository<Entity> repository) : base()
+        public BaseService(IMapper mapper,IGenericRepository<Entity> repository) : base()
         {
             this.mapper = mapper;
             this.repository = repository;

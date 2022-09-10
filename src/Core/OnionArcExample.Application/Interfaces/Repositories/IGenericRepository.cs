@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace OnionArcExample.Application
 {
-    public interface IRepository<Entity> where Entity : BaseEntity
+    public interface IGenericRepository<Entity> where Entity : BaseEntity
     {
         Task Create(Entity entity);
         Task Update(Entity entity);

@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace OnionArcExample.Persistence.Repository
 {
-    public class StoreRepository:HibernateRepository<Store>,IStoreRepository
+    public class StoreRepository:GenericRepository<Store>,IStoreRepository
     {
         private readonly ISession session;
         private ITransaction transaction;

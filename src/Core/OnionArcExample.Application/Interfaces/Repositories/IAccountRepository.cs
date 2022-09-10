@@ -3,7 +3,7 @@ using System.Threading.Tasks;
 
 namespace OnionArcExample.Application.Interfaces.Repositories
 {
-    public interface IAccountRepository:IRepository<Account>
+    public interface IAccountRepository:IGenericRepository<Account>
     {
     }
 }

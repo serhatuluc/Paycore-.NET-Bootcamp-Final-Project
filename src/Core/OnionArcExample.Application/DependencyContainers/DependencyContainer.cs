@@ -1,6 +1,9 @@
 ﻿using AutoMapper;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Configuration;
+using FluentValidation.AspNetCore;
+using FluentValidation;
+using OnionArcExample.Application.Validator;
 
 namespace OnionArcExample.Application.DependencyContainers
 {
@@ -9,6 +12,10 @@ namespace OnionArcExample.Application.DependencyContainers
         public static JwtConfig JwtConfig { get; private set; }
         public static void AddApplicationServices(this IServiceCollection services, IConfiguration Configuration)
         {
+            //FluentValidation validated
+            services.AddFluentValidationAutoValidation();
+            services.AddValidatorsFromAssemblyContaining(typeof(AuthorValidator));
+
             // services 
             services.AddScoped<IStoreService, StoreService>();
             services.AddScoped<IAuthorService, AuthorService>();

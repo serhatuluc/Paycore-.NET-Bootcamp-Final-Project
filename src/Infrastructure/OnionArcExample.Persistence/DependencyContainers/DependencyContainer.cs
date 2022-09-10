@@ -13,7 +13,6 @@ namespace OnionArcExample.Persistence
             services.AddScoped<IAccountRepository, AccountRepository>();
             services.AddScoped<IAuthorRepository, AuthorRepository>();
             services.AddScoped<IStoreRepository, StoreRepository>();
-            services.AddScoped<ITokenRepository, TokenRepository>();
           
 
             // hibernate

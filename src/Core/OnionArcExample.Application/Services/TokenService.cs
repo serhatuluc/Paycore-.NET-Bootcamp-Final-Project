@@ -15,13 +15,13 @@ namespace OnionArcExample.Application
 
     public class TokenService : ITokenService
     {
-        protected readonly ITokenRepository hibernateRepository;
+        protected readonly IAccountRepository accountRepository;
         private readonly JwtConfig jwtConfig;
 
-        public TokenService(IOptionsMonitor<JwtConfig> jwtConfig, ITokenRepository hibernateRepository)
+        public TokenService(IOptionsMonitor<JwtConfig> jwtConfig, IAccountRepository accountRepository)
         {
             this.jwtConfig = jwtConfig.CurrentValue;
-            this.hibernateRepository = hibernateRepository;
+            this.accountRepository = accountRepository;
            
         }
 
@@ -34,7 +34,7 @@ namespace OnionArcExample.Application
                     return new BaseResponse<TokenResponse>("Please enter valid informations.");
                 }
 
-                var accounts = await hibernateRepository.GetAll(x => x.UserName.Equals(tokenRequest.UserName));
+                var accounts = await accountRepository.GetAll(x => x.UserName.Equals(tokenRequest.UserName));
                 var account = accounts.FirstOrDefault();
                 if (account is null)
                 {
@@ -51,7 +51,7 @@ namespace OnionArcExample.Application
 
                 account.LastActivity = now;
 
-                await hibernateRepository.Update(account);
+                await accountRepository.Update(account);
 
                 TokenResponse tokenResponse = new TokenResponse
                 {

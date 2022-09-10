@@ -24,9 +24,7 @@ namespace OnionArcExample.WebAPI
 
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddFluentValidationAutoValidation();
-            services.AddValidatorsFromAssemblyContaining(typeof(AuthorValidator));
-            
+
 
             services.AddApplicationServices(Configuration);
             services.AddInfrastructureServices(Configuration);

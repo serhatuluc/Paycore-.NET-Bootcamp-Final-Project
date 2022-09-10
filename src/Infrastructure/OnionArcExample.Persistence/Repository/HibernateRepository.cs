@@ -26,11 +26,11 @@ namespace OnionArcExample.Persistence
             {
                 transaction = session.BeginTransaction();
                 await session.SaveAsync(entity);
-                transaction.Commit();
+                await transaction.CommitAsync();
             }
             catch (Exception ex)
             {
-                transaction.Rollback();
+                await transaction.RollbackAsync();
                 Log.Error(ex, "Insert Error");
             }
             finally
@@ -45,7 +45,7 @@ namespace OnionArcExample.Persistence
             {
                 transaction = session.BeginTransaction();
                 await session.DeleteAsync(entity);
-                transaction.Commit();
+                await transaction.CommitAsync();
             }
             catch (Exception ex)
             {
@@ -75,11 +75,11 @@ namespace OnionArcExample.Persistence
             {
                 transaction = session.BeginTransaction();
                 await session.UpdateAsync(entity);
-                transaction.Commit();
+                await transaction.CommitAsync();
             }
             catch (Exception ex)
             {
-                transaction.Rollback();
+                await transaction.RollbackAsync();
                 Log.Error(ex, "Update Error");
             }
             finally

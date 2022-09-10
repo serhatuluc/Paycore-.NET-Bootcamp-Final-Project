@@ -17,4 +17,8 @@
     <ProjectReference Include="..\..\Core\OnionArcExample.Domain\OnionArcExample.Domain.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="UnitOfWork\" />
+  </ItemGroup>
+
 </Project>

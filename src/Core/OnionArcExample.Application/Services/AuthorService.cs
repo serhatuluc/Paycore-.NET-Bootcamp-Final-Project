@@ -8,18 +8,18 @@ namespace OnionArcExample.Application
 {
     public class AuthorService : BaseService<AuthorDto, Author>, IAuthorService
     {
-        protected readonly IMapper mapper;
-        protected readonly IAuthorRepository authorRepository;
+        protected readonly IMapper _mapper;
+        private readonly IUnitOfWork _unitOfWork;
 
-        public AuthorService(IMapper mapper,IAuthorRepository authorRepository) : base(mapper,authorRepository)
+        public AuthorService(IMapper mapper, IUnitOfWork _unitOfWork) : base(mapper,_unitOfWork.Author)
         {
-            this.mapper = mapper;
-            this.authorRepository = authorRepository;
+            this._mapper = mapper;
+            this._unitOfWork = _unitOfWork;
 
         }
         public virtual async Task<BaseResponse<Account>> GetAccountById(int id)
         {
-            var account = await authorRepository.GetAccount(id);
+            var account = await _unitOfWork.Author.GetAccount(id);
             return new BaseResponse<Account>(account);
         }
 

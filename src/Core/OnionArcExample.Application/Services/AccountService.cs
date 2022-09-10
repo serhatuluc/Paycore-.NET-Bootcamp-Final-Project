@@ -7,13 +7,13 @@ namespace OnionArcExample.Application
 {
     public class AccountService : BaseService<AccountDto, Account>, IAccountService
     {
-        protected readonly IMapper mapper;
-        protected readonly IAccountRepository accountRepository;
+        protected readonly IMapper _mapper;
+        protected readonly IUnitOfWork unitOfWork;
 
-        public AccountService(IMapper mapper, IAccountRepository accountRepository) : base(mapper,accountRepository)
+        public AccountService(IMapper mapper, IUnitOfWork unitOfWork) : base(mapper,unitOfWork.Account)
         {
-            this.mapper = mapper;
-            this.accountRepository = accountRepository;
+            this._mapper = mapper;
+            this.unitOfWork = unitOfWork;
         }
 
 

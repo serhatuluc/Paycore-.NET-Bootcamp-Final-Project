@@ -4,6 +4,7 @@ using Microsoft.Extensions.Configuration;
 using FluentValidation.AspNetCore;
 using FluentValidation;
 using OnionArcExample.Application.Validator;
+using OnionArcExample.Domain;
 
 namespace OnionArcExample.Application.DependencyContainers
 {

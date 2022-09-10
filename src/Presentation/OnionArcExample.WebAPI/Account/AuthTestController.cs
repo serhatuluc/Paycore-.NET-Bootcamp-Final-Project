@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using OnionArcExample.Application;
+using OnionArcExample.Domain;
 
 
 namespace OnionArcExample.WebAPI

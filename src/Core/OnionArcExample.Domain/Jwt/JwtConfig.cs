@@ -1,4 +1,4 @@
-﻿namespace OnionArcExample.Application
+﻿namespace OnionArcExample.Domain
 {
     public class JwtConfig
     {

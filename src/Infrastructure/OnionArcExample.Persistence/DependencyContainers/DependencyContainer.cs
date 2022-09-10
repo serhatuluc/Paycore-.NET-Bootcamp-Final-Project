@@ -1,8 +1,8 @@
 ﻿using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using OnionArcExample.Application;
 using OnionArcExample.Application.Interfaces.Repositories;
 using OnionArcExample.Persistence.Repository;
+using OnionArcExample.Persistence.UnitofWork;
 
 namespace OnionArcExample.Persistence
 {
@@ -13,6 +13,7 @@ namespace OnionArcExample.Persistence
             services.AddScoped<IAccountRepository, AccountRepository>();
             services.AddScoped<IAuthorRepository, AuthorRepository>();
             services.AddScoped<IStoreRepository, StoreRepository>();
+            services.AddScoped<IUnitOfWork, UnitOfWork>();
           
 
             // hibernate

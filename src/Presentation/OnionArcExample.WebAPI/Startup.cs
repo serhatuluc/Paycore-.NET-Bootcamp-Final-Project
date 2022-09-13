@@ -1,4 +1,3 @@
-using FluentValidation;
 using FluentValidation.AspNetCore;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -6,10 +5,10 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using OnionArcExample.Application;
+using OnionArcExample.Application.Common.Interfaces.Services;
 using OnionArcExample.Application.DependencyContainers;
-using OnionArcExample.Application.Validator;
 using OnionArcExample.Persistence;
-using System.ComponentModel;
+using OnionArcExample.WebAPI.Services;
 
 namespace OnionArcExample.WebAPI
 {
@@ -19,11 +18,16 @@ namespace OnionArcExample.WebAPI
         {
             Configuration = configuration;
         }
-     
+
         public IConfiguration Configuration { get; }
 
         public void ConfigureServices(IServiceCollection services)
         {
+            //Services
+            services.AddScoped<ITokenService, TokenService>();
+
+            //FluentValidation validated
+            services.AddFluentValidationAutoValidation();
 
 
             services.AddApplicationServices(Configuration);

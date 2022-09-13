@@ -1,0 +1,813 @@
+2022-09-13 02:28:18.865 +03:00 [INF] Application Is Starting
+2022-09-13 02:28:21.934 +03:00 [INF] User profile is available. Using 'C:\Users\Asus\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-09-13 02:28:22.289 +03:00 [INF] Now listening on: https://localhost:5001
+2022-09-13 02:28:22.289 +03:00 [INF] Now listening on: http://localhost:5000
+2022-09-13 02:28:22.289 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-09-13 02:28:22.289 +03:00 [INF] Hosting environment: Development
+2022-09-13 02:28:22.289 +03:00 [INF] Content root path: C:\Users\Asus\Desktop\OnionArcFinal\src\Presentation\OnionArcExample.WebAPI
+2022-09-13 02:28:22.917 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/index.html - -
+2022-09-13 02:28:23.052 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/index.html - - - 200 - text/html;charset=utf-8 138.7463ms
+2022-09-13 02:28:23.438 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - -
+2022-09-13 02:28:23.528 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 89.5365ms
+2022-09-13 02:28:29.986 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/api/nhb/AccountContoller - -
+2022-09-13 02:28:29.999 +03:00 [INF] No cached response available for this request.
+2022-09-13 02:28:30.130 +03:00 [INF] Executing endpoint 'OnionArcExample.WebAPI.AccountContoller.GetAll (OnionArcExample.WebAPI)'
+2022-09-13 02:28:30.166 +03:00 [INF] Route matched with {action = "GetAll", controller = "AccountContoller"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller OnionArcExample.WebAPI.AccountContoller (OnionArcExample.WebAPI).
+2022-09-13 02:28:30.674 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[OnionArcExample.Application.AccountOperations.Queries.GetAccountList.GetAccountListQuery, OnionArcExample.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-09-13 02:28:30.695 +03:00 [INF] Executed action OnionArcExample.WebAPI.AccountContoller.GetAll (OnionArcExample.WebAPI) in 523.8002ms
+2022-09-13 02:28:30.697 +03:00 [INF] Executed endpoint 'OnionArcExample.WebAPI.AccountContoller.GetAll (OnionArcExample.WebAPI)'
+2022-09-13 02:28:30.698 +03:00 [INF] The response could not be cached for this request.
+2022-09-13 02:28:30.704 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/api/nhb/AccountContoller - - - 200 - application/json;+charset=utf-8 717.2354ms
+2022-09-13 02:29:57.158 +03:00 [INF] Application Is Starting
+2022-09-13 02:30:00.422 +03:00 [INF] User profile is available. Using 'C:\Users\Asus\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-09-13 02:30:00.773 +03:00 [INF] Now listening on: https://localhost:5001
+2022-09-13 02:30:00.773 +03:00 [INF] Now listening on: http://localhost:5000
+2022-09-13 02:30:00.773 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-09-13 02:30:00.773 +03:00 [INF] Hosting environment: Development
+2022-09-13 02:30:00.773 +03:00 [INF] Content root path: C:\Users\Asus\Desktop\OnionArcFinal\src\Presentation\OnionArcExample.WebAPI
+2022-09-13 02:30:01.391 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/index.html - -
+2022-09-13 02:30:01.504 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/index.html - - - 200 - text/html;charset=utf-8 118.3950ms
+2022-09-13 02:30:01.951 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - -
+2022-09-13 02:30:02.192 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 240.6209ms
+2022-09-13 02:30:17.581 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/api/nhb/Author - -
+2022-09-13 02:30:17.594 +03:00 [INF] No cached response available for this request.
+2022-09-13 02:30:17.717 +03:00 [INF] Executing endpoint 'OnionArcExample.WebAPI.AuthorController.GetAll (OnionArcExample.WebAPI)'
+2022-09-13 02:30:17.747 +03:00 [INF] Route matched with {action = "GetAll", controller = "Author"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller OnionArcExample.WebAPI.AuthorController (OnionArcExample.WebAPI).
+2022-09-13 02:30:18.224 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[OnionArcExample.Application.AuthorOperations.Queries.GetAuthorList.GetAuthorListQuery, OnionArcExample.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-09-13 02:30:18.248 +03:00 [INF] Executed action OnionArcExample.WebAPI.AuthorController.GetAll (OnionArcExample.WebAPI) in 495.6297ms
+2022-09-13 02:30:18.249 +03:00 [INF] Executed endpoint 'OnionArcExample.WebAPI.AuthorController.GetAll (OnionArcExample.WebAPI)'
+2022-09-13 02:30:18.250 +03:00 [INF] The response could not be cached for this request.
+2022-09-13 02:30:18.256 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/api/nhb/Author - - - 200 - application/json;+charset=utf-8 675.6522ms
+2022-09-13 02:32:00.283 +03:00 [INF] Application Is Starting
+2022-09-13 02:32:03.486 +03:00 [INF] User profile is available. Using 'C:\Users\Asus\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-09-13 02:32:03.994 +03:00 [INF] Now listening on: https://localhost:5001
+2022-09-13 02:32:03.995 +03:00 [INF] Now listening on: http://localhost:5000
+2022-09-13 02:32:03.995 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-09-13 02:32:03.995 +03:00 [INF] Hosting environment: Development
+2022-09-13 02:32:03.995 +03:00 [INF] Content root path: C:\Users\Asus\Desktop\OnionArcFinal\src\Presentation\OnionArcExample.WebAPI
+2022-09-13 02:32:05.365 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/index.html - -
+2022-09-13 02:32:05.478 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/index.html - - - 200 - text/html;charset=utf-8 115.6810ms
+2022-09-13 02:32:05.852 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - -
+2022-09-13 02:32:05.952 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 99.9137ms
+2022-09-13 02:32:16.815 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/api/nhb/Author/1 - -
+2022-09-13 02:32:16.827 +03:00 [INF] No cached response available for this request.
+2022-09-13 02:32:16.949 +03:00 [INF] Executing endpoint 'OnionArcExample.WebAPI.AuthorController.GetById (OnionArcExample.WebAPI)'
+2022-09-13 02:32:16.989 +03:00 [INF] Route matched with {action = "GetById", controller = "Author"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetById(Int32) on controller OnionArcExample.WebAPI.AuthorController (OnionArcExample.WebAPI).
+2022-09-13 02:32:17.768 +03:00 [INF] Executed action OnionArcExample.WebAPI.AuthorController.GetById (OnionArcExample.WebAPI) in 773.3365ms
+2022-09-13 02:32:17.770 +03:00 [INF] Executed endpoint 'OnionArcExample.WebAPI.AuthorController.GetById (OnionArcExample.WebAPI)'
+2022-09-13 02:32:17.929 +03:00 [ERR] Something Went wrong while processing /api/nhb/Author/1
+OnionArcExample.Application.NotFoundException: Author with id (1) was not found
+   at OnionArcExample.Application.AuthorOperations.Queries.GetAuthorDetail.GetAuthorDetailQueryHandler.Handle(GetAuthorDetailQuery request, CancellationToken cancellationToken) in C:\Users\Asus\Desktop\OnionArcFinal\src\Core\OnionArcExample.Application\AuthorOperations\Queries\GetAuthorDetail\GetAuthorDetailQueryHandler.cs:line 27
+   at MediatR.Pipeline.RequestExceptionProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
+   at MediatR.Pipeline.RequestExceptionProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
+   at MediatR.Pipeline.RequestExceptionActionProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
+   at MediatR.Pipeline.RequestExceptionActionProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
+   at MediatR.Pipeline.RequestPostProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
+   at MediatR.Pipeline.RequestPreProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
+   at OnionArcExample.WebAPI.AuthorController.GetById(Int32 id) in C:\Users\Asus\Desktop\OnionArcFinal\src\Presentation\OnionArcExample.WebAPI\Controller\AuthorController.cs:line 36
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.ResponseCaching.ResponseCachingMiddleware.Invoke(HttpContext httpContext)
+   at OnionArcExample.Application.ExceptionMiddleware.InvokeAsync(HttpContext context) in C:\Users\Asus\Desktop\OnionArcFinal\src\Presentation\OnionArcExample.WebAPI\Middleware\ExceptionMiddleware.cs:line 26
+2022-09-13 02:32:18.180 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/api/nhb/Author/1 - - - 404 - application/json 1365.9128ms
+2022-09-13 02:32:26.170 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/api/nhb/Author - -
+2022-09-13 02:32:26.170 +03:00 [INF] No cached response available for this request.
+2022-09-13 02:32:26.174 +03:00 [INF] Executing endpoint 'OnionArcExample.WebAPI.AuthorController.GetAll (OnionArcExample.WebAPI)'
+2022-09-13 02:32:26.178 +03:00 [INF] Route matched with {action = "GetAll", controller = "Author"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller OnionArcExample.WebAPI.AuthorController (OnionArcExample.WebAPI).
+2022-09-13 02:32:26.286 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[OnionArcExample.Application.AuthorOperations.Queries.GetAuthorList.GetAuthorListQuery, OnionArcExample.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-09-13 02:32:26.300 +03:00 [INF] Executed action OnionArcExample.WebAPI.AuthorController.GetAll (OnionArcExample.WebAPI) in 121.3846ms
+2022-09-13 02:32:26.300 +03:00 [INF] Executed endpoint 'OnionArcExample.WebAPI.AuthorController.GetAll (OnionArcExample.WebAPI)'
+2022-09-13 02:32:26.300 +03:00 [INF] The response could not be cached for this request.
+2022-09-13 02:32:26.301 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/api/nhb/Author - - - 200 - application/json;+charset=utf-8 131.3764ms
+2022-09-13 02:32:32.174 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/api/nhb/Author/3 - -
+2022-09-13 02:32:32.175 +03:00 [INF] No cached response available for this request.
+2022-09-13 02:32:32.177 +03:00 [INF] Executing endpoint 'OnionArcExample.WebAPI.AuthorController.GetById (OnionArcExample.WebAPI)'
+2022-09-13 02:32:32.178 +03:00 [INF] Route matched with {action = "GetById", controller = "Author"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetById(Int32) on controller OnionArcExample.WebAPI.AuthorController (OnionArcExample.WebAPI).
+2022-09-13 02:32:32.187 +03:00 [INF] Executing OkObjectResult, writing value of type 'OnionArcExample.Application.AuthorOperations.Queries.GetAuthorDetail.AuthorDetailVm'.
+2022-09-13 02:32:32.190 +03:00 [INF] Executed action OnionArcExample.WebAPI.AuthorController.GetById (OnionArcExample.WebAPI) in 12.0507ms
+2022-09-13 02:32:32.190 +03:00 [INF] Executed endpoint 'OnionArcExample.WebAPI.AuthorController.GetById (OnionArcExample.WebAPI)'
+2022-09-13 02:32:32.190 +03:00 [INF] The response could not be cached for this request.
+2022-09-13 02:32:32.190 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/api/nhb/Author/3 - - - 200 - application/json;+charset=utf-8 15.8137ms
+2022-09-13 02:34:13.125 +03:00 [INF] Application Is Starting
+2022-09-13 02:34:16.381 +03:00 [INF] User profile is available. Using 'C:\Users\Asus\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-09-13 02:34:16.862 +03:00 [INF] Now listening on: https://localhost:5001
+2022-09-13 02:34:16.862 +03:00 [INF] Now listening on: http://localhost:5000
+2022-09-13 02:34:16.863 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-09-13 02:34:16.863 +03:00 [INF] Hosting environment: Development
+2022-09-13 02:34:16.863 +03:00 [INF] Content root path: C:\Users\Asus\Desktop\OnionArcFinal\src\Presentation\OnionArcExample.WebAPI
+2022-09-13 02:34:17.836 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/index.html - -
+2022-09-13 02:34:17.957 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/index.html - - - 200 - text/html;charset=utf-8 123.2630ms
+2022-09-13 02:34:18.414 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - -
+2022-09-13 02:34:18.536 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 121.8766ms
+2022-09-13 14:00:28.299 +03:00 [INF] Application Is Starting
+2022-09-13 14:00:33.955 +03:00 [INF] User profile is available. Using 'C:\Users\Asus\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-09-13 14:00:34.515 +03:00 [INF] Now listening on: https://localhost:5001
+2022-09-13 14:00:34.515 +03:00 [INF] Now listening on: http://localhost:5000
+2022-09-13 14:00:34.516 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-09-13 14:00:34.516 +03:00 [INF] Hosting environment: Development
+2022-09-13 14:00:34.516 +03:00 [INF] Content root path: C:\Users\Asus\Desktop\OnionArcFinalV2\src\Presentation\OnionArcExample.WebAPI
+2022-09-13 14:00:35.269 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/index.html - -
+2022-09-13 14:00:35.369 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/index.html - - - 200 - text/html;charset=utf-8 111.6249ms
+2022-09-13 14:00:35.806 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - -
+2022-09-13 14:00:35.903 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 97.1131ms
+2022-09-13 14:02:04.907 +03:00 [INF] Request starting HTTP/2 POST https://localhost:5001/api/nhb/AccountContoller application/json 74
+2022-09-13 14:02:05.454 +03:00 [INF] Executing endpoint 'OnionArcExample.WebAPI.AccountContoller.Create (OnionArcExample.WebAPI)'
+2022-09-13 14:02:05.492 +03:00 [INF] Route matched with {action = "Create", controller = "AccountContoller"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(OnionArcExample.Application.AccountOperations.Commands.CreateAccount.CreateAccountCommand) on controller OnionArcExample.WebAPI.AccountContoller (OnionArcExample.WebAPI).
+2022-09-13 14:02:05.811 +03:00 [ERR] Insert Error
+NHibernate.PropertyValueException: not-null property references a null or transient value OnionArcExample.Domain.Account.Role
+   at NHibernate.Engine.Nullability.CheckNullability(Object[] values, IEntityPersister persister, Boolean isUpdate)
+   at NHibernate.Event.Default.AbstractSaveEventListener.PerformSaveOrReplicateAsync(Object entity, EntityKey key, IEntityPersister persister, Boolean useIdentityColumn, Object anything, IEventSource source, Boolean requiresImmediateIdAccess, CancellationToken cancellationToken)
+   at NHibernate.Event.Default.AbstractSaveEventListener.PerformSaveAsync(Object entity, Object id, IEntityPersister persister, Boolean useIdentityColumn, Object anything, IEventSource source, Boolean requiresImmediateIdAccess, CancellationToken cancellationToken)
+   at NHibernate.Event.Default.AbstractSaveEventListener.SaveWithGeneratedIdAsync(Object entity, String entityName, Object anything, IEventSource source, Boolean requiresImmediateIdAccess, CancellationToken cancellationToken)
+   at NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.EntityIsTransientAsync(SaveOrUpdateEvent event, CancellationToken cancellationToken)
+   at NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.OnSaveOrUpdateAsync(SaveOrUpdateEvent event, CancellationToken cancellationToken)
+   at NHibernate.Impl.SessionImpl.FireSaveAsync(SaveOrUpdateEvent event, CancellationToken cancellationToken)
+   at NHibernate.Impl.SessionImpl.SaveAsync(Object obj, CancellationToken cancellationToken)
+   at OnionArcExample.Persistence.GenericRepository`1.Create(Entity entity) in C:\Users\Asus\Desktop\OnionArcFinalV2\src\Infrastructure\OnionArcExample.Persistence\Repository\GenericRepository.cs:line 28
+2022-09-13 14:02:06.021 +03:00 [INF] Executing HttpStatusCodeResult, setting HTTP status code 204
+2022-09-13 14:02:06.030 +03:00 [INF] Executed action OnionArcExample.WebAPI.AccountContoller.Create (OnionArcExample.WebAPI) in 530.7032ms
+2022-09-13 14:02:06.031 +03:00 [INF] Executed endpoint 'OnionArcExample.WebAPI.AccountContoller.Create (OnionArcExample.WebAPI)'
+2022-09-13 14:02:06.034 +03:00 [INF] Request finished HTTP/2 POST https://localhost:5001/api/nhb/AccountContoller application/json 74 - 204 - - 1127.7220ms
+2022-09-13 14:02:10.893 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/api/nhb/AccountContoller - -
+2022-09-13 14:02:10.902 +03:00 [INF] No cached response available for this request.
+2022-09-13 14:02:10.905 +03:00 [INF] Executing endpoint 'OnionArcExample.WebAPI.AccountContoller.GetAll (OnionArcExample.WebAPI)'
+2022-09-13 14:02:10.912 +03:00 [INF] Route matched with {action = "GetAll", controller = "AccountContoller"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller OnionArcExample.WebAPI.AccountContoller (OnionArcExample.WebAPI).
+2022-09-13 14:02:11.573 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[OnionArcExample.Application.AccountOperations.Queries.GetAccountList.GetAccountListQuery, OnionArcExample.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-09-13 14:02:11.590 +03:00 [INF] Executed action OnionArcExample.WebAPI.AccountContoller.GetAll (OnionArcExample.WebAPI) in 677.5695ms
+2022-09-13 14:02:11.590 +03:00 [INF] Executed endpoint 'OnionArcExample.WebAPI.AccountContoller.GetAll (OnionArcExample.WebAPI)'
+2022-09-13 14:02:11.590 +03:00 [INF] The response could not be cached for this request.
+2022-09-13 14:02:11.590 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/api/nhb/AccountContoller - - - 200 - application/json;+charset=utf-8 697.5145ms
+2022-09-13 14:05:17.045 +03:00 [INF] Application Is Starting
+2022-09-13 14:05:19.514 +03:00 [INF] User profile is available. Using 'C:\Users\Asus\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-09-13 14:05:19.845 +03:00 [INF] Now listening on: https://localhost:5001
+2022-09-13 14:05:19.846 +03:00 [INF] Now listening on: http://localhost:5000
+2022-09-13 14:05:19.846 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-09-13 14:05:19.846 +03:00 [INF] Hosting environment: Development
+2022-09-13 14:05:19.846 +03:00 [INF] Content root path: C:\Users\Asus\Desktop\OnionArcFinalV2\src\Presentation\OnionArcExample.WebAPI
+2022-09-13 14:05:20.587 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/index.html - -
+2022-09-13 14:05:20.701 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/index.html - - - 200 - text/html;charset=utf-8 116.2859ms
+2022-09-13 14:05:21.085 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - -
+2022-09-13 14:05:21.186 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 101.8276ms
+2022-09-13 14:10:12.782 +03:00 [INF] Application Is Starting
+2022-09-13 14:10:15.174 +03:00 [INF] User profile is available. Using 'C:\Users\Asus\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-09-13 14:10:15.508 +03:00 [INF] Now listening on: https://localhost:5001
+2022-09-13 14:10:15.508 +03:00 [INF] Now listening on: http://localhost:5000
+2022-09-13 14:10:15.508 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-09-13 14:10:15.508 +03:00 [INF] Hosting environment: Development
+2022-09-13 14:10:15.508 +03:00 [INF] Content root path: C:\Users\Asus\Desktop\OnionArcFinalV2\src\Presentation\OnionArcExample.WebAPI
+2022-09-13 14:10:16.310 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/index.html - -
+2022-09-13 14:10:16.420 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/index.html - - - 200 - text/html;charset=utf-8 111.8289ms
+2022-09-13 14:10:16.774 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - -
+2022-09-13 14:10:16.882 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 107.9399ms
+2022-09-13 14:10:21.879 +03:00 [INF] Request starting HTTP/2 POST https://localhost:5001/api/nhb/AccountContoller application/json 74
+2022-09-13 14:10:21.995 +03:00 [INF] Executing endpoint 'OnionArcExample.WebAPI.AccountContoller.Create (OnionArcExample.WebAPI)'
+2022-09-13 14:10:22.034 +03:00 [INF] Route matched with {action = "Create", controller = "AccountContoller"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(OnionArcExample.Application.AccountOperations.Commands.CreateAccount.CreateAccountCommand) on controller OnionArcExample.WebAPI.AccountContoller (OnionArcExample.WebAPI).
+2022-09-13 14:11:08.760 +03:00 [INF] Application Is Starting
+2022-09-13 14:11:11.218 +03:00 [INF] User profile is available. Using 'C:\Users\Asus\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-09-13 14:11:11.544 +03:00 [INF] Now listening on: https://localhost:5001
+2022-09-13 14:11:11.544 +03:00 [INF] Now listening on: http://localhost:5000
+2022-09-13 14:11:11.544 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-09-13 14:11:11.544 +03:00 [INF] Hosting environment: Development
+2022-09-13 14:11:11.544 +03:00 [INF] Content root path: C:\Users\Asus\Desktop\OnionArcFinalV2\src\Presentation\OnionArcExample.WebAPI
+2022-09-13 14:11:12.244 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/index.html - -
+2022-09-13 14:11:12.338 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/index.html - - - 200 - text/html;charset=utf-8 96.4932ms
+2022-09-13 14:11:12.708 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - -
+2022-09-13 14:11:12.809 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 100.3710ms
+2022-09-13 14:11:17.564 +03:00 [INF] Request starting HTTP/2 POST https://localhost:5001/api/nhb/AccountContoller application/json 74
+2022-09-13 14:11:17.677 +03:00 [INF] Executing endpoint 'OnionArcExample.WebAPI.AccountContoller.Create (OnionArcExample.WebAPI)'
+2022-09-13 14:11:17.718 +03:00 [INF] Route matched with {action = "Create", controller = "AccountContoller"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(OnionArcExample.Application.AccountOperations.Commands.CreateAccount.CreateAccountCommand) on controller OnionArcExample.WebAPI.AccountContoller (OnionArcExample.WebAPI).
+2022-09-13 14:11:18.011 +03:00 [ERR] Insert Error
+NHibernate.PropertyValueException: not-null property references a null or transient value OnionArcExample.Domain.Account.Role
+   at NHibernate.Engine.Nullability.CheckNullability(Object[] values, IEntityPersister persister, Boolean isUpdate)
+   at NHibernate.Event.Default.AbstractSaveEventListener.PerformSaveOrReplicateAsync(Object entity, EntityKey key, IEntityPersister persister, Boolean useIdentityColumn, Object anything, IEventSource source, Boolean requiresImmediateIdAccess, CancellationToken cancellationToken)
+   at NHibernate.Event.Default.AbstractSaveEventListener.PerformSaveAsync(Object entity, Object id, IEntityPersister persister, Boolean useIdentityColumn, Object anything, IEventSource source, Boolean requiresImmediateIdAccess, CancellationToken cancellationToken)
+   at NHibernate.Event.Default.AbstractSaveEventListener.SaveWithGeneratedIdAsync(Object entity, String entityName, Object anything, IEventSource source, Boolean requiresImmediateIdAccess, CancellationToken cancellationToken)
+   at NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.EntityIsTransientAsync(SaveOrUpdateEvent event, CancellationToken cancellationToken)
+   at NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.OnSaveOrUpdateAsync(SaveOrUpdateEvent event, CancellationToken cancellationToken)
+   at NHibernate.Impl.SessionImpl.FireSaveAsync(SaveOrUpdateEvent event, CancellationToken cancellationToken)
+   at NHibernate.Impl.SessionImpl.SaveAsync(Object obj, CancellationToken cancellationToken)
+   at OnionArcExample.Persistence.GenericRepository`1.Create(Entity entity) in C:\Users\Asus\Desktop\OnionArcFinalV2\src\Infrastructure\OnionArcExample.Persistence\Repository\GenericRepository.cs:line 28
+2022-09-13 14:11:18.082 +03:00 [INF] Executing HttpStatusCodeResult, setting HTTP status code 204
+2022-09-13 14:11:18.089 +03:00 [INF] Executed action OnionArcExample.WebAPI.AccountContoller.Create (OnionArcExample.WebAPI) in 366.1376ms
+2022-09-13 14:11:18.090 +03:00 [INF] Executed endpoint 'OnionArcExample.WebAPI.AccountContoller.Create (OnionArcExample.WebAPI)'
+2022-09-13 14:11:18.093 +03:00 [INF] Request finished HTTP/2 POST https://localhost:5001/api/nhb/AccountContoller application/json 74 - 204 - - 529.4258ms
+2022-09-13 14:11:22.181 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/api/nhb/AccountContoller - -
+2022-09-13 14:11:22.190 +03:00 [INF] No cached response available for this request.
+2022-09-13 14:11:22.195 +03:00 [INF] Executing endpoint 'OnionArcExample.WebAPI.AccountContoller.GetAll (OnionArcExample.WebAPI)'
+2022-09-13 14:11:22.198 +03:00 [INF] Route matched with {action = "GetAll", controller = "AccountContoller"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller OnionArcExample.WebAPI.AccountContoller (OnionArcExample.WebAPI).
+2022-09-13 14:11:22.664 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[OnionArcExample.Application.AccountOperations.Queries.GetAccountList.GetAccountListQuery, OnionArcExample.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-09-13 14:11:22.681 +03:00 [INF] Executed action OnionArcExample.WebAPI.AccountContoller.GetAll (OnionArcExample.WebAPI) in 483.7412ms
+2022-09-13 14:11:22.682 +03:00 [INF] Executed endpoint 'OnionArcExample.WebAPI.AccountContoller.GetAll (OnionArcExample.WebAPI)'
+2022-09-13 14:11:22.682 +03:00 [INF] The response could not be cached for this request.
+2022-09-13 14:11:22.683 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/api/nhb/AccountContoller - - - 200 - application/json;+charset=utf-8 501.3966ms
+2022-09-13 14:11:46.036 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/api/nhb/AccountContoller - -
+2022-09-13 14:11:46.037 +03:00 [INF] No cached response available for this request.
+2022-09-13 14:11:46.039 +03:00 [INF] Executing endpoint 'OnionArcExample.WebAPI.AccountContoller.GetAll (OnionArcExample.WebAPI)'
+2022-09-13 14:11:46.039 +03:00 [INF] Route matched with {action = "GetAll", controller = "AccountContoller"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller OnionArcExample.WebAPI.AccountContoller (OnionArcExample.WebAPI).
+2022-09-13 14:11:46.047 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[OnionArcExample.Application.AccountOperations.Queries.GetAccountList.GetAccountListQuery, OnionArcExample.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-09-13 14:11:46.047 +03:00 [INF] Executed action OnionArcExample.WebAPI.AccountContoller.GetAll (OnionArcExample.WebAPI) in 8.3095ms
+2022-09-13 14:11:46.047 +03:00 [INF] Executed endpoint 'OnionArcExample.WebAPI.AccountContoller.GetAll (OnionArcExample.WebAPI)'
+2022-09-13 14:11:46.047 +03:00 [INF] The response could not be cached for this request.
+2022-09-13 14:11:46.047 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/api/nhb/AccountContoller - - - 200 - application/json;+charset=utf-8 11.0533ms
+2022-09-13 14:31:14.346 +03:00 [INF] Application Is Starting
+2022-09-13 14:31:17.037 +03:00 [INF] User profile is available. Using 'C:\Users\Asus\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-09-13 14:31:17.387 +03:00 [INF] Now listening on: https://localhost:5001
+2022-09-13 14:31:17.388 +03:00 [INF] Now listening on: http://localhost:5000
+2022-09-13 14:31:17.388 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-09-13 14:31:17.388 +03:00 [INF] Hosting environment: Development
+2022-09-13 14:31:17.388 +03:00 [INF] Content root path: C:\Users\Asus\Desktop\OnionArcFinalV2\src\Presentation\OnionArcExample.WebAPI
+2022-09-13 14:31:18.035 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/index.html - -
+2022-09-13 14:31:18.146 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/index.html - - - 200 - text/html;charset=utf-8 114.4315ms
+2022-09-13 14:31:18.516 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - -
+2022-09-13 14:31:18.615 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 98.8889ms
+2022-09-13 14:31:22.792 +03:00 [INF] Request starting HTTP/2 POST https://localhost:5001/api/nhb/AccountContoller application/json 74
+2022-09-13 14:31:22.920 +03:00 [INF] Executing endpoint 'OnionArcExample.WebAPI.AccountContoller.Create (OnionArcExample.WebAPI)'
+2022-09-13 14:31:22.967 +03:00 [INF] Route matched with {action = "Create", controller = "AccountContoller"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(OnionArcExample.Application.AccountOperations.Commands.CreateAccount.CreateAccountCommand) on controller OnionArcExample.WebAPI.AccountContoller (OnionArcExample.WebAPI).
+2022-09-13 14:31:23.317 +03:00 [INF] Executing HttpStatusCodeResult, setting HTTP status code 204
+2022-09-13 14:31:23.323 +03:00 [INF] Executed action OnionArcExample.WebAPI.AccountContoller.Create (OnionArcExample.WebAPI) in 350.5367ms
+2022-09-13 14:31:23.324 +03:00 [INF] Executed endpoint 'OnionArcExample.WebAPI.AccountContoller.Create (OnionArcExample.WebAPI)'
+2022-09-13 14:31:23.327 +03:00 [INF] Request finished HTTP/2 POST https://localhost:5001/api/nhb/AccountContoller application/json 74 - 204 - - 535.1722ms
+2022-09-13 14:31:27.892 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/api/nhb/AccountContoller - -
+2022-09-13 14:31:27.901 +03:00 [INF] No cached response available for this request.
+2022-09-13 14:31:27.908 +03:00 [INF] Executing endpoint 'OnionArcExample.WebAPI.AccountContoller.GetAll (OnionArcExample.WebAPI)'
+2022-09-13 14:31:27.911 +03:00 [INF] Route matched with {action = "GetAll", controller = "AccountContoller"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller OnionArcExample.WebAPI.AccountContoller (OnionArcExample.WebAPI).
+2022-09-13 14:31:28.340 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[OnionArcExample.Application.AccountOperations.Queries.GetAccountList.GetAccountListQuery, OnionArcExample.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-09-13 14:31:28.358 +03:00 [INF] Executed action OnionArcExample.WebAPI.AccountContoller.GetAll (OnionArcExample.WebAPI) in 446.0228ms
+2022-09-13 14:31:28.358 +03:00 [INF] Executed endpoint 'OnionArcExample.WebAPI.AccountContoller.GetAll (OnionArcExample.WebAPI)'
+2022-09-13 14:31:28.358 +03:00 [INF] The response could not be cached for this request.
+2022-09-13 14:31:28.358 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/api/nhb/AccountContoller - - - 200 - application/json;+charset=utf-8 466.5528ms
+2022-09-13 14:33:42.920 +03:00 [INF] Application Is Starting
+2022-09-13 14:33:45.371 +03:00 [INF] User profile is available. Using 'C:\Users\Asus\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-09-13 14:33:45.709 +03:00 [INF] Now listening on: https://localhost:5001
+2022-09-13 14:33:45.709 +03:00 [INF] Now listening on: http://localhost:5000
+2022-09-13 14:33:45.710 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-09-13 14:33:45.710 +03:00 [INF] Hosting environment: Development
+2022-09-13 14:33:45.710 +03:00 [INF] Content root path: C:\Users\Asus\Desktop\OnionArcFinalV2\src\Presentation\OnionArcExample.WebAPI
+2022-09-13 14:33:46.463 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/index.html - -
+2022-09-13 14:33:46.579 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/index.html - - - 200 - text/html;charset=utf-8 120.0697ms
+2022-09-13 14:33:46.952 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - -
+2022-09-13 14:33:47.050 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 97.4818ms
+2022-09-13 14:33:55.152 +03:00 [INF] Request starting HTTP/2 POST https://localhost:5001/api/nhb/AccountContoller application/json 74
+2022-09-13 14:33:55.288 +03:00 [INF] Executing endpoint 'OnionArcExample.WebAPI.AccountContoller.Create (OnionArcExample.WebAPI)'
+2022-09-13 14:33:55.333 +03:00 [INF] Route matched with {action = "Create", controller = "AccountContoller"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(OnionArcExample.Application.AccountOperations.Commands.CreateAccount.CreateAccountCommand) on controller OnionArcExample.WebAPI.AccountContoller (OnionArcExample.WebAPI).
+2022-09-13 14:33:55.649 +03:00 [INF] Executing HttpStatusCodeResult, setting HTTP status code 204
+2022-09-13 14:33:55.655 +03:00 [INF] Executed action OnionArcExample.WebAPI.AccountContoller.Create (OnionArcExample.WebAPI) in 317.0712ms
+2022-09-13 14:33:55.656 +03:00 [INF] Executed endpoint 'OnionArcExample.WebAPI.AccountContoller.Create (OnionArcExample.WebAPI)'
+2022-09-13 14:33:55.659 +03:00 [INF] Request finished HTTP/2 POST https://localhost:5001/api/nhb/AccountContoller application/json 74 - 204 - - 507.7101ms
+2022-09-13 14:33:58.908 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/api/nhb/AccountContoller - -
+2022-09-13 14:33:58.918 +03:00 [INF] No cached response available for this request.
+2022-09-13 14:33:58.922 +03:00 [INF] Executing endpoint 'OnionArcExample.WebAPI.AccountContoller.GetAll (OnionArcExample.WebAPI)'
+2022-09-13 14:33:58.925 +03:00 [INF] Route matched with {action = "GetAll", controller = "AccountContoller"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller OnionArcExample.WebAPI.AccountContoller (OnionArcExample.WebAPI).
+2022-09-13 14:33:59.411 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[OnionArcExample.Application.AccountOperations.Queries.GetAccountList.GetAccountListQuery, OnionArcExample.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-09-13 14:33:59.428 +03:00 [INF] Executed action OnionArcExample.WebAPI.AccountContoller.GetAll (OnionArcExample.WebAPI) in 503.5575ms
+2022-09-13 14:33:59.429 +03:00 [INF] Executed endpoint 'OnionArcExample.WebAPI.AccountContoller.GetAll (OnionArcExample.WebAPI)'
+2022-09-13 14:33:59.429 +03:00 [INF] The response could not be cached for this request.
+2022-09-13 14:33:59.429 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/api/nhb/AccountContoller - - - 200 - application/json;+charset=utf-8 521.5468ms
+2022-09-13 14:34:16.729 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/api/nhb/AccountContoller - -
+2022-09-13 14:34:16.734 +03:00 [INF] No cached response available for this request.
+2022-09-13 14:34:16.736 +03:00 [INF] Executing endpoint 'OnionArcExample.WebAPI.AccountContoller.GetAll (OnionArcExample.WebAPI)'
+2022-09-13 14:34:16.736 +03:00 [INF] Route matched with {action = "GetAll", controller = "AccountContoller"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller OnionArcExample.WebAPI.AccountContoller (OnionArcExample.WebAPI).
+2022-09-13 14:34:16.742 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[OnionArcExample.Application.AccountOperations.Queries.GetAccountList.GetAccountListQuery, OnionArcExample.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-09-13 14:34:16.742 +03:00 [INF] Executed action OnionArcExample.WebAPI.AccountContoller.GetAll (OnionArcExample.WebAPI) in 6.5822ms
+2022-09-13 14:34:16.743 +03:00 [INF] Executed endpoint 'OnionArcExample.WebAPI.AccountContoller.GetAll (OnionArcExample.WebAPI)'
+2022-09-13 14:34:16.743 +03:00 [INF] The response could not be cached for this request.
+2022-09-13 14:34:16.743 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/api/nhb/AccountContoller - - - 200 - application/json;+charset=utf-8 13.7460ms
+2022-09-13 14:34:25.973 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/api/nhb/AccountContoller - -
+2022-09-13 14:34:25.973 +03:00 [INF] No cached response available for this request.
+2022-09-13 14:34:25.974 +03:00 [INF] Executing endpoint 'OnionArcExample.WebAPI.AccountContoller.GetAll (OnionArcExample.WebAPI)'
+2022-09-13 14:34:25.974 +03:00 [INF] Route matched with {action = "GetAll", controller = "AccountContoller"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller OnionArcExample.WebAPI.AccountContoller (OnionArcExample.WebAPI).
+2022-09-13 14:34:25.983 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[OnionArcExample.Application.AccountOperations.Queries.GetAccountList.GetAccountListQuery, OnionArcExample.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-09-13 14:34:25.983 +03:00 [INF] Executed action OnionArcExample.WebAPI.AccountContoller.GetAll (OnionArcExample.WebAPI) in 9.0362ms
+2022-09-13 14:34:25.983 +03:00 [INF] Executed endpoint 'OnionArcExample.WebAPI.AccountContoller.GetAll (OnionArcExample.WebAPI)'
+2022-09-13 14:34:25.983 +03:00 [INF] The response could not be cached for this request.
+2022-09-13 14:34:25.984 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/api/nhb/AccountContoller - - - 200 - application/json;+charset=utf-8 10.7386ms
+2022-09-13 14:34:29.808 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/api/nhb/AccountContoller - -
+2022-09-13 14:34:29.808 +03:00 [INF] No cached response available for this request.
+2022-09-13 14:34:29.808 +03:00 [INF] Executing endpoint 'OnionArcExample.WebAPI.AccountContoller.GetAll (OnionArcExample.WebAPI)'
+2022-09-13 14:34:29.809 +03:00 [INF] Route matched with {action = "GetAll", controller = "AccountContoller"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller OnionArcExample.WebAPI.AccountContoller (OnionArcExample.WebAPI).
+2022-09-13 14:34:29.813 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[OnionArcExample.Application.AccountOperations.Queries.GetAccountList.GetAccountListQuery, OnionArcExample.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-09-13 14:34:29.814 +03:00 [INF] Executed action OnionArcExample.WebAPI.AccountContoller.GetAll (OnionArcExample.WebAPI) in 5.1098ms
+2022-09-13 14:34:29.814 +03:00 [INF] Executed endpoint 'OnionArcExample.WebAPI.AccountContoller.GetAll (OnionArcExample.WebAPI)'
+2022-09-13 14:34:29.814 +03:00 [INF] The response could not be cached for this request.
+2022-09-13 14:34:29.814 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/api/nhb/AccountContoller - - - 200 - application/json;+charset=utf-8 6.1713ms
+2022-09-13 14:34:45.051 +03:00 [INF] Request starting HTTP/2 POST https://localhost:5001/api/nhb/Token/Login application/json 41
+2022-09-13 14:34:45.051 +03:00 [INF] Executing endpoint 'OnionArcExample.WebAPI.TokenController.Login (OnionArcExample.WebAPI)'
+2022-09-13 14:34:45.055 +03:00 [INF] Route matched with {action = "Login", controller = "Token"}. Executing controller action with signature System.Threading.Tasks.Task`1[OnionArcExample.Application.TokenResponse] Login(OnionArcExample.Application.TokenRequest) on controller OnionArcExample.WebAPI.TokenController (OnionArcExample.WebAPI).
+2022-09-13 14:34:45.204 +03:00 [INF] Executed action OnionArcExample.WebAPI.TokenController.Login (OnionArcExample.WebAPI) in 149.1435ms
+2022-09-13 14:34:45.204 +03:00 [INF] Executed endpoint 'OnionArcExample.WebAPI.TokenController.Login (OnionArcExample.WebAPI)'
+2022-09-13 14:34:45.278 +03:00 [ERR] Something Went wrong while processing /api/nhb/Token/Login
+OnionArcExample.Application.Common.Exceptions.CredentialException: Please validate your informations that you provided.
+   at OnionArcExample.WebAPI.Services.TokenService.GenerateToken(TokenRequest tokenRequest) in C:\Users\Asus\Desktop\OnionArcFinalV2\src\Presentation\OnionArcExample.WebAPI\Services\TokenService.cs:line 47
+   at OnionArcExample.WebAPI.TokenController.Login(TokenRequest request) in C:\Users\Asus\Desktop\OnionArcFinalV2\src\Presentation\OnionArcExample.WebAPI\Account\TokenController.cs:line 23
+   at lambda_method22(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.ResponseCaching.ResponseCachingMiddleware.Invoke(HttpContext httpContext)
+   at OnionArcExample.Application.ExceptionMiddleware.InvokeAsync(HttpContext context) in C:\Users\Asus\Desktop\OnionArcFinalV2\src\Presentation\OnionArcExample.WebAPI\Middleware\ExceptionMiddleware.cs:line 26
+2022-09-13 14:34:45.585 +03:00 [INF] Request finished HTTP/2 POST https://localhost:5001/api/nhb/Token/Login application/json 41 - 401 - application/json 534.3762ms
+2022-09-13 14:35:20.947 +03:00 [INF] Request starting HTTP/2 POST https://localhost:5001/api/nhb/Token/Login application/json 67
+2022-09-13 14:35:20.947 +03:00 [INF] Executing endpoint 'OnionArcExample.WebAPI.TokenController.Login (OnionArcExample.WebAPI)'
+2022-09-13 14:35:20.947 +03:00 [INF] Route matched with {action = "Login", controller = "Token"}. Executing controller action with signature System.Threading.Tasks.Task`1[OnionArcExample.Application.TokenResponse] Login(OnionArcExample.Application.TokenRequest) on controller OnionArcExample.WebAPI.TokenController (OnionArcExample.WebAPI).
+2022-09-13 14:35:21.276 +03:00 [INF] Executing ObjectResult, writing value of type 'OnionArcExample.Application.TokenResponse'.
+2022-09-13 14:35:21.278 +03:00 [INF] Executed action OnionArcExample.WebAPI.TokenController.Login (OnionArcExample.WebAPI) in 330.4346ms
+2022-09-13 14:35:21.278 +03:00 [INF] Executed endpoint 'OnionArcExample.WebAPI.TokenController.Login (OnionArcExample.WebAPI)'
+2022-09-13 14:35:21.278 +03:00 [INF] Request finished HTTP/2 POST https://localhost:5001/api/nhb/Token/Login application/json 67 - 200 - application/json;+charset=utf-8 331.4598ms
+2022-09-13 14:35:51.209 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/api/nhb/AccountContoller - -
+2022-09-13 14:35:51.280 +03:00 [INF] Successfully validated the token.
+2022-09-13 14:35:51.282 +03:00 [INF] Executing endpoint 'OnionArcExample.WebAPI.AccountContoller.GetAll (OnionArcExample.WebAPI)'
+2022-09-13 14:35:51.282 +03:00 [INF] Route matched with {action = "GetAll", controller = "AccountContoller"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller OnionArcExample.WebAPI.AccountContoller (OnionArcExample.WebAPI).
+2022-09-13 14:35:51.290 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[OnionArcExample.Application.AccountOperations.Queries.GetAccountList.GetAccountListQuery, OnionArcExample.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-09-13 14:35:51.291 +03:00 [INF] Executed action OnionArcExample.WebAPI.AccountContoller.GetAll (OnionArcExample.WebAPI) in 8.1051ms
+2022-09-13 14:35:51.291 +03:00 [INF] Executed endpoint 'OnionArcExample.WebAPI.AccountContoller.GetAll (OnionArcExample.WebAPI)'
+2022-09-13 14:35:51.291 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/api/nhb/AccountContoller - - - 200 - application/json;+charset=utf-8 81.7085ms
+2022-09-13 15:08:57.270 +03:00 [INF] Application Is Starting
+2022-09-13 15:09:02.768 +03:00 [INF] User profile is available. Using 'C:\Users\Asus\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-09-13 15:09:03.394 +03:00 [INF] Now listening on: https://localhost:5001
+2022-09-13 15:09:03.394 +03:00 [INF] Now listening on: http://localhost:5000
+2022-09-13 15:09:03.394 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-09-13 15:09:03.394 +03:00 [INF] Hosting environment: Development
+2022-09-13 15:09:03.394 +03:00 [INF] Content root path: C:\Users\Asus\Desktop\OnionArcFinalV2\src\Presentation\OnionArcExample.WebAPI
+2022-09-13 15:09:04.061 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/index.html - -
+2022-09-13 15:09:04.189 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/index.html - - - 200 - text/html;charset=utf-8 131.7643ms
+2022-09-13 15:09:04.567 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - -
+2022-09-13 15:09:04.672 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 105.7911ms
+2022-09-13 15:23:46.956 +03:00 [INF] Application Is Starting
+2022-09-13 15:23:49.595 +03:00 [INF] User profile is available. Using 'C:\Users\Asus\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-09-13 15:23:49.949 +03:00 [INF] Now listening on: https://localhost:5001
+2022-09-13 15:23:49.949 +03:00 [INF] Now listening on: http://localhost:5000
+2022-09-13 15:23:49.949 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-09-13 15:23:49.949 +03:00 [INF] Hosting environment: Development
+2022-09-13 15:23:49.950 +03:00 [INF] Content root path: C:\Users\Asus\Desktop\OnionArcFinalV2\src\Presentation\OnionArcExample.WebAPI
+2022-09-13 15:23:51.032 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/index.html - -
+2022-09-13 15:23:51.144 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/index.html - - - 200 - text/html;charset=utf-8 113.9071ms
+2022-09-13 15:23:51.517 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - -
+2022-09-13 15:23:51.633 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 115.2701ms
+2022-09-13 15:23:58.480 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/api/nhb/AccountContoller - -
+2022-09-13 15:23:58.495 +03:00 [INF] No cached response available for this request.
+2022-09-13 15:23:59.052 +03:00 [INF] Executing endpoint 'OnionArcExample.WebAPI.AccountContoller.GetAll (OnionArcExample.WebAPI)'
+2022-09-13 15:23:59.084 +03:00 [INF] Route matched with {action = "GetAll", controller = "AccountContoller"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller OnionArcExample.WebAPI.AccountContoller (OnionArcExample.WebAPI).
+2022-09-13 15:23:59.776 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[OnionArcExample.Application.AccountOperations.Queries.GetAccountList.GetAccountListQuery, OnionArcExample.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-09-13 15:23:59.800 +03:00 [INF] Executed action OnionArcExample.WebAPI.AccountContoller.GetAll (OnionArcExample.WebAPI) in 710.8006ms
+2022-09-13 15:23:59.802 +03:00 [INF] Executed endpoint 'OnionArcExample.WebAPI.AccountContoller.GetAll (OnionArcExample.WebAPI)'
+2022-09-13 15:23:59.803 +03:00 [INF] The response could not be cached for this request.
+2022-09-13 15:23:59.812 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/api/nhb/AccountContoller - - - 200 - application/json;+charset=utf-8 1332.4544ms
+2022-09-13 16:21:21.346 +03:00 [INF] Application Is Starting
+2022-09-13 16:21:24.031 +03:00 [INF] User profile is available. Using 'C:\Users\Asus\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-09-13 16:21:24.411 +03:00 [INF] Now listening on: https://localhost:5001
+2022-09-13 16:21:24.411 +03:00 [INF] Now listening on: http://localhost:5000
+2022-09-13 16:21:24.411 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-09-13 16:21:24.411 +03:00 [INF] Hosting environment: Development
+2022-09-13 16:21:24.411 +03:00 [INF] Content root path: C:\Users\Asus\Desktop\OnionArcFinalV2\src\Presentation\OnionArcExample.WebAPI
+2022-09-13 16:21:24.922 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/index.html - -
+2022-09-13 16:21:25.027 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/index.html - - - 200 - text/html;charset=utf-8 107.5559ms
+2022-09-13 16:21:25.404 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - -
+2022-09-13 16:21:25.519 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 115.5137ms
+2022-09-13 18:01:04.915 +03:00 [INF] Application Is Starting
+2022-09-13 18:01:10.572 +03:00 [INF] User profile is available. Using 'C:\Users\Asus\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-09-13 18:01:11.245 +03:00 [INF] Now listening on: https://localhost:5001
+2022-09-13 18:01:11.245 +03:00 [INF] Now listening on: http://localhost:5000
+2022-09-13 18:01:11.246 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-09-13 18:01:11.246 +03:00 [INF] Hosting environment: Development
+2022-09-13 18:01:11.247 +03:00 [INF] Content root path: C:\Users\Asus\Desktop\OnionArcFinalV2\src\Presentation\OnionArcExample.WebAPI
+2022-09-13 18:01:12.079 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/index.html - -
+2022-09-13 18:01:12.202 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/index.html - - - 200 - text/html;charset=utf-8 126.0084ms
+2022-09-13 18:01:12.583 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - -
+2022-09-13 18:01:12.684 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 100.9489ms
+2022-09-13 18:03:10.343 +03:00 [INF] Application Is Starting
+2022-09-13 18:03:13.148 +03:00 [INF] User profile is available. Using 'C:\Users\Asus\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-09-13 18:03:13.514 +03:00 [INF] Now listening on: https://localhost:5001
+2022-09-13 18:03:13.514 +03:00 [INF] Now listening on: http://localhost:5000
+2022-09-13 18:03:13.515 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-09-13 18:03:13.515 +03:00 [INF] Hosting environment: Development
+2022-09-13 18:03:13.515 +03:00 [INF] Content root path: C:\Users\Asus\Desktop\OnionArcFinalV2\src\Presentation\OnionArcExample.WebAPI
+2022-09-13 18:03:13.966 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/index.html - -
+2022-09-13 18:03:14.067 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/index.html - - - 200 - text/html;charset=utf-8 104.4508ms
+2022-09-13 18:03:14.427 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - -
+2022-09-13 18:03:14.525 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 98.0368ms
+2022-09-13 18:09:06.515 +03:00 [INF] Application Is Starting
+2022-09-13 18:09:12.210 +03:00 [INF] User profile is available. Using 'C:\Users\Asus\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-09-13 18:09:12.912 +03:00 [INF] Now listening on: https://localhost:5001
+2022-09-13 18:09:12.912 +03:00 [INF] Now listening on: http://localhost:5000
+2022-09-13 18:09:12.912 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-09-13 18:09:12.912 +03:00 [INF] Hosting environment: Development
+2022-09-13 18:09:12.912 +03:00 [INF] Content root path: C:\Users\Asus\Desktop\OnionArcFinalV2\src\Presentation\OnionArcExample.WebAPI
+2022-09-13 18:09:13.715 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/index.html - -
+2022-09-13 18:09:13.849 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/index.html - - - 200 - text/html;charset=utf-8 136.7591ms
+2022-09-13 18:09:14.262 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - -
+2022-09-13 18:09:14.391 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 128.7149ms
+2022-09-13 18:15:30.637 +03:00 [INF] Application Is Starting
+2022-09-13 18:15:33.111 +03:00 [INF] User profile is available. Using 'C:\Users\Asus\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-09-13 18:15:33.450 +03:00 [INF] Now listening on: https://localhost:5001
+2022-09-13 18:15:33.450 +03:00 [INF] Now listening on: http://localhost:5000
+2022-09-13 18:15:33.450 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-09-13 18:15:33.450 +03:00 [INF] Hosting environment: Development
+2022-09-13 18:15:33.450 +03:00 [INF] Content root path: C:\Users\Asus\Desktop\OnionArcFinalV2\src\Presentation\OnionArcExample.WebAPI
+2022-09-13 18:15:34.231 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/index.html - -
+2022-09-13 18:15:34.326 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/index.html - - - 200 - text/html;charset=utf-8 96.8342ms
+2022-09-13 18:15:34.682 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - -
+2022-09-13 18:15:34.792 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 109.9961ms
+2022-09-13 18:15:43.018 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/api/nhb/Author - -
+2022-09-13 18:15:43.031 +03:00 [INF] No cached response available for this request.
+2022-09-13 18:15:43.571 +03:00 [INF] Executing endpoint 'OnionArcExample.WebAPI.AuthorController.GetAll (OnionArcExample.WebAPI)'
+2022-09-13 18:15:43.599 +03:00 [INF] Route matched with {action = "GetAll", controller = "Author"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller OnionArcExample.WebAPI.AuthorController (OnionArcExample.WebAPI).
+2022-09-13 18:15:44.251 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[OnionArcExample.Application.AuthorOperations.Queries.GetAuthorList.GetAuthorListQuery, OnionArcExample.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-09-13 18:15:44.267 +03:00 [INF] Executed action OnionArcExample.WebAPI.AuthorController.GetAll (OnionArcExample.WebAPI) in 663.201ms
+2022-09-13 18:15:44.269 +03:00 [INF] Executed endpoint 'OnionArcExample.WebAPI.AuthorController.GetAll (OnionArcExample.WebAPI)'
+2022-09-13 18:15:44.270 +03:00 [INF] The response could not be cached for this request.
+2022-09-13 18:15:44.276 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/api/nhb/Author - - - 200 - application/json;+charset=utf-8 1257.3062ms
+2022-09-13 18:16:04.648 +03:00 [INF] Request starting HTTP/2 POST https://localhost:5001/api/nhb/Author application/json 54
+2022-09-13 18:16:04.652 +03:00 [INF] Executing endpoint 'OnionArcExample.WebAPI.AuthorController.Create (OnionArcExample.WebAPI)'
+2022-09-13 18:16:04.667 +03:00 [INF] Route matched with {action = "Create", controller = "Author"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(OnionArcExample.Application.AuthorOperations.CreateAuthorCommand) on controller OnionArcExample.WebAPI.AuthorController (OnionArcExample.WebAPI).
+2022-09-13 18:16:05.136 +03:00 [INF] Executing HttpStatusCodeResult, setting HTTP status code 204
+2022-09-13 18:16:05.137 +03:00 [INF] Executed action OnionArcExample.WebAPI.AuthorController.Create (OnionArcExample.WebAPI) in 468.8724ms
+2022-09-13 18:16:05.137 +03:00 [INF] Executed endpoint 'OnionArcExample.WebAPI.AuthorController.Create (OnionArcExample.WebAPI)'
+2022-09-13 18:16:05.137 +03:00 [INF] Request finished HTTP/2 POST https://localhost:5001/api/nhb/Author application/json 54 - 204 - - 489.1290ms
+2022-09-13 18:16:15.229 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/api/nhb/Author - -
+2022-09-13 18:16:15.229 +03:00 [INF] No cached response available for this request.
+2022-09-13 18:16:15.230 +03:00 [INF] Executing endpoint 'OnionArcExample.WebAPI.AuthorController.GetAll (OnionArcExample.WebAPI)'
+2022-09-13 18:16:15.231 +03:00 [INF] Route matched with {action = "GetAll", controller = "Author"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller OnionArcExample.WebAPI.AuthorController (OnionArcExample.WebAPI).
+2022-09-13 18:16:15.285 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[OnionArcExample.Application.AuthorOperations.Queries.GetAuthorList.GetAuthorListQuery, OnionArcExample.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-09-13 18:16:15.287 +03:00 [INF] Executed action OnionArcExample.WebAPI.AuthorController.GetAll (OnionArcExample.WebAPI) in 55.9654ms
+2022-09-13 18:16:15.287 +03:00 [INF] Executed endpoint 'OnionArcExample.WebAPI.AuthorController.GetAll (OnionArcExample.WebAPI)'
+2022-09-13 18:16:15.287 +03:00 [INF] The response could not be cached for this request.
+2022-09-13 18:16:15.287 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/api/nhb/Author - - - 200 - application/json;+charset=utf-8 58.6246ms
+2022-09-13 18:16:26.206 +03:00 [INF] Request starting HTTP/2 DELETE https://localhost:5001/api/nhb/Author?id=1 - -
+2022-09-13 18:16:26.206 +03:00 [INF] Executing endpoint 'OnionArcExample.WebAPI.AuthorController.Remove (OnionArcExample.WebAPI)'
+2022-09-13 18:16:26.212 +03:00 [INF] Route matched with {action = "Remove", controller = "Author"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Remove(Int32) on controller OnionArcExample.WebAPI.AuthorController (OnionArcExample.WebAPI).
+2022-09-13 18:16:26.272 +03:00 [INF] Executing HttpStatusCodeResult, setting HTTP status code 204
+2022-09-13 18:16:26.272 +03:00 [INF] Executed action OnionArcExample.WebAPI.AuthorController.Remove (OnionArcExample.WebAPI) in 60.0672ms
+2022-09-13 18:16:26.272 +03:00 [INF] Executed endpoint 'OnionArcExample.WebAPI.AuthorController.Remove (OnionArcExample.WebAPI)'
+2022-09-13 18:16:26.273 +03:00 [INF] Request finished HTTP/2 DELETE https://localhost:5001/api/nhb/Author?id=1 - - - 204 - - 67.0068ms
+2022-09-13 18:16:59.477 +03:00 [INF] Application Is Starting
+2022-09-13 18:17:02.077 +03:00 [INF] User profile is available. Using 'C:\Users\Asus\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-09-13 18:17:02.421 +03:00 [INF] Now listening on: https://localhost:5001
+2022-09-13 18:17:02.421 +03:00 [INF] Now listening on: http://localhost:5000
+2022-09-13 18:17:02.421 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-09-13 18:17:02.421 +03:00 [INF] Hosting environment: Development
+2022-09-13 18:17:02.421 +03:00 [INF] Content root path: C:\Users\Asus\Desktop\OnionArcFinalV2\src\Presentation\OnionArcExample.WebAPI
+2022-09-13 18:17:02.973 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/index.html - -
+2022-09-13 18:17:03.090 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/index.html - - - 200 - text/html;charset=utf-8 119.1445ms
+2022-09-13 18:17:03.500 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - -
+2022-09-13 18:17:03.634 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 133.6690ms
+2022-09-13 18:17:31.372 +03:00 [INF] Request starting HTTP/2 POST https://localhost:5001/api/nhb/Author application/json 54
+2022-09-13 18:17:31.486 +03:00 [INF] Executing endpoint 'OnionArcExample.WebAPI.AuthorController.Create (OnionArcExample.WebAPI)'
+2022-09-13 18:17:31.523 +03:00 [INF] Route matched with {action = "Create", controller = "Author"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(OnionArcExample.Application.AuthorOperations.CreateAuthorCommand) on controller OnionArcExample.WebAPI.AuthorController (OnionArcExample.WebAPI).
+2022-09-13 18:17:53.941 +03:00 [INF] Executing HttpStatusCodeResult, setting HTTP status code 204
+2022-09-13 18:17:53.947 +03:00 [INF] Executed action OnionArcExample.WebAPI.AuthorController.Create (OnionArcExample.WebAPI) in 22419.3418ms
+2022-09-13 18:17:53.948 +03:00 [INF] Executed endpoint 'OnionArcExample.WebAPI.AuthorController.Create (OnionArcExample.WebAPI)'
+2022-09-13 18:17:53.951 +03:00 [INF] Request finished HTTP/2 POST https://localhost:5001/api/nhb/Author application/json 54 - 204 - - 22578.8774ms
+2022-09-13 18:19:06.616 +03:00 [INF] Application Is Starting
+2022-09-13 18:19:09.051 +03:00 [INF] User profile is available. Using 'C:\Users\Asus\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-09-13 18:19:09.422 +03:00 [INF] Now listening on: https://localhost:5001
+2022-09-13 18:19:09.423 +03:00 [INF] Now listening on: http://localhost:5000
+2022-09-13 18:19:09.423 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-09-13 18:19:09.423 +03:00 [INF] Hosting environment: Development
+2022-09-13 18:19:09.423 +03:00 [INF] Content root path: C:\Users\Asus\Desktop\OnionArcFinalV2\src\Presentation\OnionArcExample.WebAPI
+2022-09-13 18:19:10.109 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/index.html - -
+2022-09-13 18:19:10.210 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/index.html - - - 200 - text/html;charset=utf-8 103.3372ms
+2022-09-13 18:19:10.576 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - -
+2022-09-13 18:19:10.679 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 103.3821ms
+2022-09-13 18:19:16.212 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/api/nhb/AccountContoller - -
+2022-09-13 18:19:16.228 +03:00 [INF] No cached response available for this request.
+2022-09-13 18:19:16.365 +03:00 [INF] Executing endpoint 'OnionArcExample.WebAPI.AccountContoller.GetAll (OnionArcExample.WebAPI)'
+2022-09-13 18:19:16.395 +03:00 [INF] Route matched with {action = "GetAll", controller = "AccountContoller"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller OnionArcExample.WebAPI.AccountContoller (OnionArcExample.WebAPI).
+2022-09-13 18:19:16.850 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[OnionArcExample.Application.AccountOperations.Queries.GetAccountList.GetAccountListQuery, OnionArcExample.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-09-13 18:19:16.868 +03:00 [INF] Executed action OnionArcExample.WebAPI.AccountContoller.GetAll (OnionArcExample.WebAPI) in 467.4154ms
+2022-09-13 18:19:16.869 +03:00 [INF] Executed endpoint 'OnionArcExample.WebAPI.AccountContoller.GetAll (OnionArcExample.WebAPI)'
+2022-09-13 18:19:16.870 +03:00 [INF] The response could not be cached for this request.
+2022-09-13 18:19:16.876 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/api/nhb/AccountContoller - - - 200 - application/json;+charset=utf-8 663.5397ms
+2022-09-13 18:19:30.321 +03:00 [INF] Request starting HTTP/2 POST https://localhost:5001/api/nhb/Author application/json 56
+2022-09-13 18:19:30.325 +03:00 [INF] Executing endpoint 'OnionArcExample.WebAPI.AuthorController.Create (OnionArcExample.WebAPI)'
+2022-09-13 18:19:30.337 +03:00 [INF] Route matched with {action = "Create", controller = "Author"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(OnionArcExample.Application.AuthorOperations.CreateAuthorCommand) on controller OnionArcExample.WebAPI.AuthorController (OnionArcExample.WebAPI).
+2022-09-13 18:19:37.922 +03:00 [INF] Executing HttpStatusCodeResult, setting HTTP status code 204
+2022-09-13 18:19:37.923 +03:00 [INF] Executed action OnionArcExample.WebAPI.AuthorController.Create (OnionArcExample.WebAPI) in 7585.5709ms
+2022-09-13 18:19:37.923 +03:00 [INF] Executed endpoint 'OnionArcExample.WebAPI.AuthorController.Create (OnionArcExample.WebAPI)'
+2022-09-13 18:19:39.530 +03:00 [INF] Request finished HTTP/2 POST https://localhost:5001/api/nhb/Author application/json 56 - 204 - - 9209.5832ms
+2022-09-13 18:19:46.918 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/api/nhb/Author - -
+2022-09-13 18:19:46.919 +03:00 [INF] No cached response available for this request.
+2022-09-13 18:19:46.921 +03:00 [INF] Executing endpoint 'OnionArcExample.WebAPI.AuthorController.GetAll (OnionArcExample.WebAPI)'
+2022-09-13 18:19:46.924 +03:00 [INF] Route matched with {action = "GetAll", controller = "Author"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller OnionArcExample.WebAPI.AuthorController (OnionArcExample.WebAPI).
+2022-09-13 18:19:46.991 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[OnionArcExample.Application.AuthorOperations.Queries.GetAuthorList.GetAuthorListQuery, OnionArcExample.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-09-13 18:19:46.994 +03:00 [INF] Executed action OnionArcExample.WebAPI.AuthorController.GetAll (OnionArcExample.WebAPI) in 69.224ms
+2022-09-13 18:19:46.994 +03:00 [INF] Executed endpoint 'OnionArcExample.WebAPI.AuthorController.GetAll (OnionArcExample.WebAPI)'
+2022-09-13 18:19:46.994 +03:00 [INF] The response could not be cached for this request.
+2022-09-13 18:19:46.994 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/api/nhb/Author - - - 200 - application/json;+charset=utf-8 75.5392ms
+2022-09-13 18:21:06.526 +03:00 [INF] Application Is Starting
+2022-09-13 18:21:08.994 +03:00 [INF] User profile is available. Using 'C:\Users\Asus\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-09-13 18:21:09.336 +03:00 [INF] Now listening on: https://localhost:5001
+2022-09-13 18:21:09.336 +03:00 [INF] Now listening on: http://localhost:5000
+2022-09-13 18:21:09.336 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-09-13 18:21:09.336 +03:00 [INF] Hosting environment: Development
+2022-09-13 18:21:09.336 +03:00 [INF] Content root path: C:\Users\Asus\Desktop\OnionArcFinalV2\src\Presentation\OnionArcExample.WebAPI
+2022-09-13 18:21:10.086 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/index.html - -
+2022-09-13 18:21:10.193 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/index.html - - - 200 - text/html;charset=utf-8 109.5451ms
+2022-09-13 18:21:10.572 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - -
+2022-09-13 18:21:10.671 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 99.2388ms
+2022-09-13 18:21:19.453 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/api/nhb/Author - -
+2022-09-13 18:21:19.466 +03:00 [INF] No cached response available for this request.
+2022-09-13 18:21:19.592 +03:00 [INF] Executing endpoint 'OnionArcExample.WebAPI.AuthorController.GetAll (OnionArcExample.WebAPI)'
+2022-09-13 18:21:19.626 +03:00 [INF] Route matched with {action = "GetAll", controller = "Author"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller OnionArcExample.WebAPI.AuthorController (OnionArcExample.WebAPI).
+2022-09-13 18:21:20.137 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[OnionArcExample.Application.AuthorOperations.Queries.GetAuthorList.GetAuthorListQuery, OnionArcExample.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-09-13 18:21:20.155 +03:00 [INF] Executed action OnionArcExample.WebAPI.AuthorController.GetAll (OnionArcExample.WebAPI) in 523.7296ms
+2022-09-13 18:21:20.156 +03:00 [INF] Executed endpoint 'OnionArcExample.WebAPI.AuthorController.GetAll (OnionArcExample.WebAPI)'
+2022-09-13 18:21:20.157 +03:00 [INF] The response could not be cached for this request.
+2022-09-13 18:21:20.163 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/api/nhb/Author - - - 200 - application/json;+charset=utf-8 709.5025ms
+2022-09-13 18:21:34.882 +03:00 [INF] Request starting HTTP/2 POST https://localhost:5001/api/nhb/Author application/json 54
+2022-09-13 18:21:34.887 +03:00 [INF] Executing endpoint 'OnionArcExample.WebAPI.AuthorController.Create (OnionArcExample.WebAPI)'
+2022-09-13 18:21:34.905 +03:00 [INF] Route matched with {action = "Create", controller = "Author"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(OnionArcExample.Application.AuthorOperations.CreateAuthorCommand) on controller OnionArcExample.WebAPI.AuthorController (OnionArcExample.WebAPI).
+2022-09-13 18:38:20.723 +03:00 [INF] Application Is Starting
+2022-09-13 18:38:23.146 +03:00 [INF] User profile is available. Using 'C:\Users\Asus\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-09-13 18:38:23.491 +03:00 [INF] Now listening on: https://localhost:5001
+2022-09-13 18:38:23.492 +03:00 [INF] Now listening on: http://localhost:5000
+2022-09-13 18:38:23.492 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-09-13 18:38:23.492 +03:00 [INF] Hosting environment: Development
+2022-09-13 18:38:23.492 +03:00 [INF] Content root path: C:\Users\Asus\Desktop\OnionArcFinalV2\src\Presentation\OnionArcExample.WebAPI
+2022-09-13 18:38:24.314 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/index.html - -
+2022-09-13 18:38:24.412 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/index.html - - - 200 - text/html;charset=utf-8 100.7409ms
+2022-09-13 18:38:24.793 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - -
+2022-09-13 18:38:24.893 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 100.3692ms
+2022-09-13 18:38:45.198 +03:00 [INF] Request starting HTTP/2 POST https://localhost:5001/api/nhb/Author application/json 56
+2022-09-13 18:38:45.312 +03:00 [INF] Executing endpoint 'OnionArcExample.WebAPI.AuthorController.Create (OnionArcExample.WebAPI)'
+2022-09-13 18:38:45.350 +03:00 [INF] Route matched with {action = "Create", controller = "Author"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(OnionArcExample.Application.AuthorOperations.CreateAuthorCommand) on controller OnionArcExample.WebAPI.AuthorController (OnionArcExample.WebAPI).
+2022-09-13 18:40:31.933 +03:00 [INF] Application Is Starting
+2022-09-13 18:40:34.337 +03:00 [INF] User profile is available. Using 'C:\Users\Asus\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-09-13 18:40:34.691 +03:00 [INF] Now listening on: https://localhost:5001
+2022-09-13 18:40:34.691 +03:00 [INF] Now listening on: http://localhost:5000
+2022-09-13 18:40:34.691 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-09-13 18:40:34.691 +03:00 [INF] Hosting environment: Development
+2022-09-13 18:40:34.691 +03:00 [INF] Content root path: C:\Users\Asus\Desktop\OnionArcFinalV2\src\Presentation\OnionArcExample.WebAPI
+2022-09-13 18:40:35.549 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/index.html - -
+2022-09-13 18:40:35.648 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/index.html - - - 200 - text/html;charset=utf-8 101.3613ms
+2022-09-13 18:40:36.011 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - -
+2022-09-13 18:40:36.113 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 101.5730ms
+2022-09-13 18:40:41.198 +03:00 [INF] Request starting HTTP/2 POST https://localhost:5001/api/nhb/Author application/json 56
+2022-09-13 18:40:41.334 +03:00 [INF] Executing endpoint 'OnionArcExample.WebAPI.AuthorController.Create (OnionArcExample.WebAPI)'
+2022-09-13 18:40:41.372 +03:00 [INF] Route matched with {action = "Create", controller = "Author"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(OnionArcExample.Application.AuthorOperations.CreateAuthorCommand) on controller OnionArcExample.WebAPI.AuthorController (OnionArcExample.WebAPI).
+2022-09-13 18:40:53.608 +03:00 [INF] Executed action OnionArcExample.WebAPI.AuthorController.Create (OnionArcExample.WebAPI) in 12230.8556ms
+2022-09-13 18:40:53.610 +03:00 [INF] Executed endpoint 'OnionArcExample.WebAPI.AuthorController.Create (OnionArcExample.WebAPI)'
+2022-09-13 18:40:53.761 +03:00 [ERR] Something Went wrong while processing /api/nhb/Author
+OnionArcExample.Application.BadRequestException: Account is not found
+   at OnionArcExample.Application.AuthorOperations.CreateAuthorHandler.Handle(CreateAuthorCommand request, CancellationToken cancellationToken) in C:\Users\Asus\Desktop\OnionArcFinalV2\src\Core\OnionArcExample.Application\AuthorOperations\Commands\CreateAuthor\CreateAuthorHandler.cs:line 22
+   at MediatR.Pipeline.RequestExceptionProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
+   at MediatR.Pipeline.RequestExceptionProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
+   at MediatR.Pipeline.RequestExceptionActionProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
+   at MediatR.Pipeline.RequestExceptionActionProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
+   at MediatR.Pipeline.RequestPostProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
+   at MediatR.Pipeline.RequestPreProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
+   at OnionArcExample.WebAPI.AuthorController.Create(CreateAuthorCommand dto) in C:\Users\Asus\Desktop\OnionArcFinalV2\src\Presentation\OnionArcExample.WebAPI\Controller\AuthorController.cs:line 45
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.ResponseCaching.ResponseCachingMiddleware.Invoke(HttpContext httpContext)
+   at OnionArcExample.Application.ExceptionMiddleware.InvokeAsync(HttpContext context) in C:\Users\Asus\Desktop\OnionArcFinalV2\src\Presentation\OnionArcExample.WebAPI\Middleware\ExceptionMiddleware.cs:line 26
+2022-09-13 18:40:54.239 +03:00 [INF] Request finished HTTP/2 POST https://localhost:5001/api/nhb/Author application/json 56 - 400 - application/json 13041.3801ms
+2022-09-13 19:46:31.057 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/index.html - -
+2022-09-13 19:46:31.060 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/index.html - - - 200 - text/html;charset=utf-8 1.9715ms
+2022-09-13 19:46:31.417 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - -
+2022-09-13 19:46:31.430 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/favicon-32x32.png - -
+2022-09-13 19:46:31.435 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 17.9507ms
+2022-09-13 19:46:31.490 +03:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2022-09-13 19:46:31.490 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/favicon-32x32.png - - - 200 628 image/png 60.1994ms
+2022-09-13 19:46:37.257 +03:00 [INF] Request starting HTTP/2 DELETE https://localhost:5001/api/nhb/Author?id=1 - -
+2022-09-13 19:46:37.262 +03:00 [INF] Executing endpoint 'OnionArcExample.WebAPI.AuthorController.Remove (OnionArcExample.WebAPI)'
+2022-09-13 19:46:37.267 +03:00 [INF] Route matched with {action = "Remove", controller = "Author"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Remove(Int32) on controller OnionArcExample.WebAPI.AuthorController (OnionArcExample.WebAPI).
+2022-09-13 19:46:37.671 +03:00 [INF] Executing HttpStatusCodeResult, setting HTTP status code 204
+2022-09-13 19:46:37.672 +03:00 [INF] Executed action OnionArcExample.WebAPI.AuthorController.Remove (OnionArcExample.WebAPI) in 404.3567ms
+2022-09-13 19:46:37.672 +03:00 [INF] Executed endpoint 'OnionArcExample.WebAPI.AuthorController.Remove (OnionArcExample.WebAPI)'
+2022-09-13 19:46:37.672 +03:00 [INF] Request finished HTTP/2 DELETE https://localhost:5001/api/nhb/Author?id=1 - - - 204 - - 415.1560ms
+2022-09-13 19:46:41.392 +03:00 [INF] Request starting HTTP/2 DELETE https://localhost:5001/api/nhb/Author?id=2 - -
+2022-09-13 19:46:41.394 +03:00 [INF] Executing endpoint 'OnionArcExample.WebAPI.AuthorController.Remove (OnionArcExample.WebAPI)'
+2022-09-13 19:46:41.394 +03:00 [INF] Route matched with {action = "Remove", controller = "Author"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Remove(Int32) on controller OnionArcExample.WebAPI.AuthorController (OnionArcExample.WebAPI).
+2022-09-13 19:46:41.405 +03:00 [INF] Executing HttpStatusCodeResult, setting HTTP status code 204
+2022-09-13 19:46:41.405 +03:00 [INF] Executed action OnionArcExample.WebAPI.AuthorController.Remove (OnionArcExample.WebAPI) in 10.6819ms
+2022-09-13 19:46:41.405 +03:00 [INF] Executed endpoint 'OnionArcExample.WebAPI.AuthorController.Remove (OnionArcExample.WebAPI)'
+2022-09-13 19:46:41.405 +03:00 [INF] Request finished HTTP/2 DELETE https://localhost:5001/api/nhb/Author?id=2 - - - 204 - - 12.9804ms
+2022-09-13 19:46:49.803 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/api/nhb/AccountContoller - -
+2022-09-13 19:46:49.812 +03:00 [INF] No cached response available for this request.
+2022-09-13 19:46:49.813 +03:00 [INF] Executing endpoint 'OnionArcExample.WebAPI.AccountContoller.GetAll (OnionArcExample.WebAPI)'
+2022-09-13 19:46:49.816 +03:00 [INF] Route matched with {action = "GetAll", controller = "AccountContoller"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller OnionArcExample.WebAPI.AccountContoller (OnionArcExample.WebAPI).
+2022-09-13 19:46:49.886 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[OnionArcExample.Application.AccountOperations.Queries.GetAccountList.GetAccountListQuery, OnionArcExample.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-09-13 19:46:49.900 +03:00 [INF] Executed action OnionArcExample.WebAPI.AccountContoller.GetAll (OnionArcExample.WebAPI) in 83.9588ms
+2022-09-13 19:46:49.900 +03:00 [INF] Executed endpoint 'OnionArcExample.WebAPI.AccountContoller.GetAll (OnionArcExample.WebAPI)'
+2022-09-13 19:46:49.900 +03:00 [INF] The response could not be cached for this request.
+2022-09-13 19:46:49.901 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/api/nhb/AccountContoller - - - 200 - application/json;+charset=utf-8 98.0212ms
+2022-09-13 19:47:34.430 +03:00 [INF] Request starting HTTP/2 POST https://localhost:5001/api/nhb/AccountContoller application/json 88
+2022-09-13 19:47:34.430 +03:00 [INF] Executing endpoint 'OnionArcExample.WebAPI.AccountContoller.Create (OnionArcExample.WebAPI)'
+2022-09-13 19:47:34.433 +03:00 [INF] Route matched with {action = "Create", controller = "AccountContoller"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(OnionArcExample.Application.AccountOperations.Commands.CreateAccount.CreateAccountCommand) on controller OnionArcExample.WebAPI.AccountContoller (OnionArcExample.WebAPI).
+2022-09-13 19:47:34.507 +03:00 [INF] Executing HttpStatusCodeResult, setting HTTP status code 204
+2022-09-13 19:47:34.507 +03:00 [INF] Executed action OnionArcExample.WebAPI.AccountContoller.Create (OnionArcExample.WebAPI) in 73.9675ms
+2022-09-13 19:47:34.507 +03:00 [INF] Executed endpoint 'OnionArcExample.WebAPI.AccountContoller.Create (OnionArcExample.WebAPI)'
+2022-09-13 19:47:34.507 +03:00 [INF] Request finished HTTP/2 POST https://localhost:5001/api/nhb/AccountContoller application/json 88 - 204 - - 77.6708ms
+2022-09-13 19:47:41.446 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/api/nhb/Author - -
+2022-09-13 19:47:41.447 +03:00 [INF] No cached response available for this request.
+2022-09-13 19:47:41.447 +03:00 [INF] Executing endpoint 'OnionArcExample.WebAPI.AuthorController.GetAll (OnionArcExample.WebAPI)'
+2022-09-13 19:47:41.449 +03:00 [INF] Route matched with {action = "GetAll", controller = "Author"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller OnionArcExample.WebAPI.AuthorController (OnionArcExample.WebAPI).
+2022-09-13 19:47:41.461 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[OnionArcExample.Application.AuthorOperations.Queries.GetAuthorList.GetAuthorListQuery, OnionArcExample.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-09-13 19:47:41.462 +03:00 [INF] Executed action OnionArcExample.WebAPI.AuthorController.GetAll (OnionArcExample.WebAPI) in 13.0996ms
+2022-09-13 19:47:41.462 +03:00 [INF] Executed endpoint 'OnionArcExample.WebAPI.AuthorController.GetAll (OnionArcExample.WebAPI)'
+2022-09-13 19:47:41.462 +03:00 [INF] The response could not be cached for this request.
+2022-09-13 19:47:41.463 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/api/nhb/Author - - - 200 - application/json;+charset=utf-8 16.4321ms
+2022-09-13 19:47:46.030 +03:00 [INF] Request starting HTTP/2 POST https://localhost:5001/api/nhb/Author application/json 56
+2022-09-13 19:47:46.030 +03:00 [INF] Executing endpoint 'OnionArcExample.WebAPI.AuthorController.Create (OnionArcExample.WebAPI)'
+2022-09-13 19:47:46.030 +03:00 [INF] Route matched with {action = "Create", controller = "Author"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(OnionArcExample.Application.AuthorOperations.CreateAuthorCommand) on controller OnionArcExample.WebAPI.AuthorController (OnionArcExample.WebAPI).
+2022-09-13 19:47:50.641 +03:00 [INF] Executed action OnionArcExample.WebAPI.AuthorController.Create (OnionArcExample.WebAPI) in 4610.7245ms
+2022-09-13 19:47:50.641 +03:00 [INF] Executed endpoint 'OnionArcExample.WebAPI.AuthorController.Create (OnionArcExample.WebAPI)'
+2022-09-13 19:47:50.725 +03:00 [ERR] Something Went wrong while processing /api/nhb/Author
+OnionArcExample.Application.BadRequestException: Account is not found
+   at OnionArcExample.Application.AuthorOperations.CreateAuthorHandler.Handle(CreateAuthorCommand request, CancellationToken cancellationToken) in C:\Users\Asus\Desktop\OnionArcFinalV2\src\Core\OnionArcExample.Application\AuthorOperations\Commands\CreateAuthor\CreateAuthorHandler.cs:line 22
+   at MediatR.Pipeline.RequestExceptionProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
+   at MediatR.Pipeline.RequestExceptionProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
+   at MediatR.Pipeline.RequestExceptionActionProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
+   at MediatR.Pipeline.RequestExceptionActionProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
+   at MediatR.Pipeline.RequestPostProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
+   at MediatR.Pipeline.RequestPreProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
+   at OnionArcExample.WebAPI.AuthorController.Create(CreateAuthorCommand dto) in C:\Users\Asus\Desktop\OnionArcFinalV2\src\Presentation\OnionArcExample.WebAPI\Controller\AuthorController.cs:line 45
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.ResponseCaching.ResponseCachingMiddleware.Invoke(HttpContext httpContext)
+   at OnionArcExample.Application.ExceptionMiddleware.InvokeAsync(HttpContext context) in C:\Users\Asus\Desktop\OnionArcFinalV2\src\Presentation\OnionArcExample.WebAPI\Middleware\ExceptionMiddleware.cs:line 26
+2022-09-13 19:47:50.726 +03:00 [INF] Request finished HTTP/2 POST https://localhost:5001/api/nhb/Author application/json 56 - 400 - application/json 4696.5615ms
+2022-09-13 19:48:19.744 +03:00 [INF] Request starting HTTP/2 POST https://localhost:5001/api/nhb/Author application/json 54
+2022-09-13 19:48:19.745 +03:00 [INF] Executing endpoint 'OnionArcExample.WebAPI.AuthorController.Create (OnionArcExample.WebAPI)'
+2022-09-13 19:48:19.745 +03:00 [INF] Route matched with {action = "Create", controller = "Author"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(OnionArcExample.Application.AuthorOperations.CreateAuthorCommand) on controller OnionArcExample.WebAPI.AuthorController (OnionArcExample.WebAPI).
+2022-09-13 19:48:19.774 +03:00 [INF] Executing HttpStatusCodeResult, setting HTTP status code 204
+2022-09-13 19:48:19.774 +03:00 [INF] Executed action OnionArcExample.WebAPI.AuthorController.Create (OnionArcExample.WebAPI) in 28.9893ms
+2022-09-13 19:48:19.774 +03:00 [INF] Executed endpoint 'OnionArcExample.WebAPI.AuthorController.Create (OnionArcExample.WebAPI)'
+2022-09-13 19:48:19.774 +03:00 [INF] Request finished HTTP/2 POST https://localhost:5001/api/nhb/Author application/json 54 - 204 - - 30.0177ms
+2022-09-13 19:48:24.397 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/api/nhb/Author - -
+2022-09-13 19:48:24.398 +03:00 [INF] No cached response available for this request.
+2022-09-13 19:48:24.398 +03:00 [INF] Executing endpoint 'OnionArcExample.WebAPI.AuthorController.GetAll (OnionArcExample.WebAPI)'
+2022-09-13 19:48:24.398 +03:00 [INF] Route matched with {action = "GetAll", controller = "Author"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller OnionArcExample.WebAPI.AuthorController (OnionArcExample.WebAPI).
+2022-09-13 19:48:24.403 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[OnionArcExample.Application.AuthorOperations.Queries.GetAuthorList.GetAuthorListQuery, OnionArcExample.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-09-13 19:48:24.412 +03:00 [INF] Executed action OnionArcExample.WebAPI.AuthorController.GetAll (OnionArcExample.WebAPI) in 13.6917ms
+2022-09-13 19:48:24.412 +03:00 [INF] Executed endpoint 'OnionArcExample.WebAPI.AuthorController.GetAll (OnionArcExample.WebAPI)'
+2022-09-13 19:48:24.412 +03:00 [INF] The response could not be cached for this request.
+2022-09-13 19:48:24.412 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/api/nhb/Author - - - 200 - application/json;+charset=utf-8 14.9647ms
+2022-09-13 19:56:04.156 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/api/nhb/AccountContoller - -
+2022-09-13 19:56:04.156 +03:00 [INF] No cached response available for this request.
+2022-09-13 19:56:04.156 +03:00 [INF] Executing endpoint 'OnionArcExample.WebAPI.AccountContoller.GetAll (OnionArcExample.WebAPI)'
+2022-09-13 19:56:04.157 +03:00 [INF] Route matched with {action = "GetAll", controller = "AccountContoller"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller OnionArcExample.WebAPI.AccountContoller (OnionArcExample.WebAPI).
+2022-09-13 19:56:04.231 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[OnionArcExample.Application.AccountOperations.Queries.GetAccountList.GetAccountListQuery, OnionArcExample.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-09-13 19:56:04.234 +03:00 [INF] Executed action OnionArcExample.WebAPI.AccountContoller.GetAll (OnionArcExample.WebAPI) in 77.7688ms
+2022-09-13 19:56:04.234 +03:00 [INF] Executed endpoint 'OnionArcExample.WebAPI.AccountContoller.GetAll (OnionArcExample.WebAPI)'
+2022-09-13 19:56:04.235 +03:00 [INF] The response could not be cached for this request.
+2022-09-13 19:56:04.235 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/api/nhb/AccountContoller - - - 200 - application/json;+charset=utf-8 79.1589ms
+2022-09-13 19:56:59.926 +03:00 [INF] Request starting HTTP/2 POST https://localhost:5001/api/nhb/Token/Login application/json 45
+2022-09-13 19:57:00.128 +03:00 [INF] Bearer was not authenticated. Failure message: No SecurityTokenValidator available for token: oldboy2003
+2022-09-13 19:57:00.128 +03:00 [INF] Executing endpoint 'OnionArcExample.WebAPI.TokenController.Login (OnionArcExample.WebAPI)'
+2022-09-13 19:57:00.131 +03:00 [INF] Route matched with {action = "Login", controller = "Token"}. Executing controller action with signature System.Threading.Tasks.Task`1[OnionArcExample.Application.TokenResponse] Login(OnionArcExample.Application.TokenRequest) on controller OnionArcExample.WebAPI.TokenController (OnionArcExample.WebAPI).
+2022-09-13 19:57:00.293 +03:00 [INF] Executing ObjectResult, writing value of type 'OnionArcExample.Application.TokenResponse'.
+2022-09-13 19:57:00.295 +03:00 [INF] Executed action OnionArcExample.WebAPI.TokenController.Login (OnionArcExample.WebAPI) in 164.0237ms
+2022-09-13 19:57:00.295 +03:00 [INF] Executed endpoint 'OnionArcExample.WebAPI.TokenController.Login (OnionArcExample.WebAPI)'
+2022-09-13 19:57:00.295 +03:00 [INF] Request finished HTTP/2 POST https://localhost:5001/api/nhb/Token/Login application/json 45 - 200 - application/json;+charset=utf-8 369.0083ms
+2022-09-13 19:57:25.765 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/Viewer - -
+2022-09-13 19:57:25.833 +03:00 [INF] Successfully validated the token.
+2022-09-13 19:57:25.840 +03:00 [INF] Authorization was successful.
+2022-09-13 19:57:25.840 +03:00 [INF] Executing endpoint 'OnionArcExample.WebAPI.AuthTestController.Viewer (OnionArcExample.WebAPI)'
+2022-09-13 19:57:25.841 +03:00 [INF] Route matched with {action = "Viewer", controller = "AuthTest"}. Executing controller action with signature System.String Viewer() on controller OnionArcExample.WebAPI.AuthTestController (OnionArcExample.WebAPI).
+2022-09-13 19:57:25.842 +03:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2022-09-13 19:57:25.842 +03:00 [INF] Executed action OnionArcExample.WebAPI.AuthTestController.Viewer (OnionArcExample.WebAPI) in 0.431ms
+2022-09-13 19:57:25.842 +03:00 [INF] Executed endpoint 'OnionArcExample.WebAPI.AuthTestController.Viewer (OnionArcExample.WebAPI)'
+2022-09-13 19:57:25.842 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/Viewer - - - 200 - text/plain;+charset=utf-8 77.1360ms
+2022-09-13 19:57:29.928 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/Admin - -
+2022-09-13 19:57:29.928 +03:00 [INF] Successfully validated the token.
+2022-09-13 19:57:29.930 +03:00 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Admin)
+2022-09-13 19:57:29.933 +03:00 [INF] AuthenticationScheme: Bearer was forbidden.
+2022-09-13 19:57:29.934 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/Admin - - - 403 0 - 5.7983ms
+2022-09-13 19:57:39.707 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/AdminViewer - -
+2022-09-13 19:57:39.707 +03:00 [INF] Successfully validated the token.
+2022-09-13 19:57:39.708 +03:00 [INF] Authorization was successful.
+2022-09-13 19:57:39.709 +03:00 [INF] Executing endpoint 'OnionArcExample.WebAPI.AuthTestController.AdminViewer (OnionArcExample.WebAPI)'
+2022-09-13 19:57:39.710 +03:00 [INF] Route matched with {action = "AdminViewer", controller = "AuthTest"}. Executing controller action with signature System.String AdminViewer() on controller OnionArcExample.WebAPI.AuthTestController (OnionArcExample.WebAPI).
+2022-09-13 19:57:39.710 +03:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2022-09-13 19:57:39.710 +03:00 [INF] Executed action OnionArcExample.WebAPI.AuthTestController.AdminViewer (OnionArcExample.WebAPI) in 0.4379ms
+2022-09-13 19:57:39.710 +03:00 [INF] Executed endpoint 'OnionArcExample.WebAPI.AuthTestController.AdminViewer (OnionArcExample.WebAPI)'
+2022-09-13 19:57:39.710 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/AdminViewer - - - 200 - text/plain;+charset=utf-8 3.6403ms
+2022-09-13 20:47:53.784 +03:00 [INF] Application Is Starting
+2022-09-13 20:47:56.701 +03:00 [INF] User profile is available. Using 'C:\Users\Asus\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-09-13 20:47:57.091 +03:00 [INF] Now listening on: https://localhost:5001
+2022-09-13 20:47:57.091 +03:00 [INF] Now listening on: http://localhost:5000
+2022-09-13 20:47:57.091 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-09-13 20:47:57.091 +03:00 [INF] Hosting environment: Development
+2022-09-13 20:47:57.091 +03:00 [INF] Content root path: C:\Users\Asus\Desktop\OnionArcFinalV2\src\Presentation\OnionArcExample.WebAPI
+2022-09-13 20:47:57.843 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/index.html - -
+2022-09-13 20:47:57.947 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/index.html - - - 200 - text/html;charset=utf-8 104.2538ms
+2022-09-13 20:47:58.387 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - -
+2022-09-13 20:47:58.510 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 122.6926ms
+2022-09-13 20:48:26.553 +03:00 [INF] Request starting HTTP/2 POST https://localhost:5001/api/nhb/Author application/json 58
+2022-09-13 20:48:26.703 +03:00 [INF] Executing endpoint 'OnionArcExample.WebAPI.AuthorController.Create (OnionArcExample.WebAPI)'
+2022-09-13 20:48:26.756 +03:00 [INF] Route matched with {action = "Create", controller = "Author"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(OnionArcExample.Application.AuthorOperations.CreateAuthorCommand) on controller OnionArcExample.WebAPI.AuthorController (OnionArcExample.WebAPI).
+2022-09-13 20:48:27.704 +03:00 [INF] Executing HttpStatusCodeResult, setting HTTP status code 204
+2022-09-13 20:48:27.711 +03:00 [INF] Executed action OnionArcExample.WebAPI.AuthorController.Create (OnionArcExample.WebAPI) in 950.123ms
+2022-09-13 20:48:27.712 +03:00 [INF] Executed endpoint 'OnionArcExample.WebAPI.AuthorController.Create (OnionArcExample.WebAPI)'
+2022-09-13 20:48:27.716 +03:00 [INF] Request finished HTTP/2 POST https://localhost:5001/api/nhb/Author application/json 58 - 204 - - 1162.5232ms
+2022-09-13 20:48:35.042 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/api/nhb/Author/GetAuthorforAccount?id=1 - -
+2022-09-13 20:48:35.053 +03:00 [INF] No cached response available for this request.
+2022-09-13 20:48:35.057 +03:00 [INF] Executing endpoint 'OnionArcExample.WebAPI.AuthorController.GetAuthorForAccount (OnionArcExample.WebAPI)'
+2022-09-13 20:48:35.061 +03:00 [INF] Route matched with {action = "GetAuthorForAccount", controller = "Author"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAuthorForAccount(Int32) on controller OnionArcExample.WebAPI.AuthorController (OnionArcExample.WebAPI).
+2022-09-13 20:48:35.158 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[OnionArcExample.Application.AuthorOperations.Queries.GetAuthorForAccount.AuthorForAccountVM, OnionArcExample.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-09-13 20:48:35.174 +03:00 [INF] Executed action OnionArcExample.WebAPI.AuthorController.GetAuthorForAccount (OnionArcExample.WebAPI) in 113.4168ms
+2022-09-13 20:48:35.175 +03:00 [INF] Executed endpoint 'OnionArcExample.WebAPI.AuthorController.GetAuthorForAccount (OnionArcExample.WebAPI)'
+2022-09-13 20:48:35.175 +03:00 [INF] The response could not be cached for this request.
+2022-09-13 20:48:35.175 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/api/nhb/Author/GetAuthorforAccount?id=1 - - - 200 - application/json;+charset=utf-8 133.7124ms
+2022-09-13 20:48:49.406 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/api/nhb/AccountContoller - -
+2022-09-13 20:48:49.410 +03:00 [INF] No cached response available for this request.
+2022-09-13 20:48:49.412 +03:00 [INF] Executing endpoint 'OnionArcExample.WebAPI.AccountContoller.GetAll (OnionArcExample.WebAPI)'
+2022-09-13 20:48:49.414 +03:00 [INF] Route matched with {action = "GetAll", controller = "AccountContoller"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller OnionArcExample.WebAPI.AccountContoller (OnionArcExample.WebAPI).
+2022-09-13 20:48:49.436 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[OnionArcExample.Application.AccountOperations.Queries.GetAccountList.GetAccountListQuery, OnionArcExample.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-09-13 20:48:49.443 +03:00 [INF] Executed action OnionArcExample.WebAPI.AccountContoller.GetAll (OnionArcExample.WebAPI) in 28.4721ms
+2022-09-13 20:48:49.443 +03:00 [INF] Executed endpoint 'OnionArcExample.WebAPI.AccountContoller.GetAll (OnionArcExample.WebAPI)'
+2022-09-13 20:48:49.443 +03:00 [INF] The response could not be cached for this request.
+2022-09-13 20:48:49.444 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/api/nhb/AccountContoller - - - 200 - application/json;+charset=utf-8 37.4966ms
+2022-09-13 20:49:54.669 +03:00 [INF] Application Is Starting
+2022-09-13 20:49:57.247 +03:00 [INF] User profile is available. Using 'C:\Users\Asus\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-09-13 20:49:57.594 +03:00 [INF] Now listening on: https://localhost:5001
+2022-09-13 20:49:57.594 +03:00 [INF] Now listening on: http://localhost:5000
+2022-09-13 20:49:57.594 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-09-13 20:49:57.594 +03:00 [INF] Hosting environment: Development
+2022-09-13 20:49:57.594 +03:00 [INF] Content root path: C:\Users\Asus\Desktop\OnionArcFinalV2\src\Presentation\OnionArcExample.WebAPI
+2022-09-13 20:49:58.353 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/index.html - -
+2022-09-13 20:49:58.456 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/index.html - - - 200 - text/html;charset=utf-8 107.9197ms
+2022-09-13 20:49:58.902 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - -
+2022-09-13 20:49:59.013 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 110.9337ms
+2022-09-13 20:50:11.455 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/api/nhb/Author/GetAuthorforAccount?id=1 - -
+2022-09-13 20:50:11.468 +03:00 [INF] No cached response available for this request.
+2022-09-13 20:50:11.588 +03:00 [INF] Executing endpoint 'OnionArcExample.WebAPI.AuthorController.GetAuthorForAccount (OnionArcExample.WebAPI)'
+2022-09-13 20:50:11.629 +03:00 [INF] Route matched with {action = "GetAuthorForAccount", controller = "Author"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAuthorForAccount(Int32) on controller OnionArcExample.WebAPI.AuthorController (OnionArcExample.WebAPI).
+2022-09-13 20:50:12.236 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[OnionArcExample.Application.AuthorOperations.Queries.GetAuthorForAccount.AuthorForAccountVM, OnionArcExample.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-09-13 20:50:12.252 +03:00 [INF] Executed action OnionArcExample.WebAPI.AuthorController.GetAuthorForAccount (OnionArcExample.WebAPI) in 618.3506ms
+2022-09-13 20:50:12.254 +03:00 [INF] Executed endpoint 'OnionArcExample.WebAPI.AuthorController.GetAuthorForAccount (OnionArcExample.WebAPI)'
+2022-09-13 20:50:12.255 +03:00 [INF] The response could not be cached for this request.
+2022-09-13 20:50:12.261 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/api/nhb/Author/GetAuthorforAccount?id=1 - - - 200 - application/json;+charset=utf-8 805.8195ms
+2022-09-13 20:50:31.117 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/api/nhb/Author - -
+2022-09-13 20:50:31.118 +03:00 [INF] No cached response available for this request.
+2022-09-13 20:50:31.122 +03:00 [INF] Executing endpoint 'OnionArcExample.WebAPI.AuthorController.GetAll (OnionArcExample.WebAPI)'
+2022-09-13 20:50:31.128 +03:00 [INF] Route matched with {action = "GetAll", controller = "Author"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller OnionArcExample.WebAPI.AuthorController (OnionArcExample.WebAPI).
+2022-09-13 20:50:31.212 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[OnionArcExample.Application.AuthorOperations.Queries.GetAuthorList.GetAuthorListQuery, OnionArcExample.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-09-13 20:50:31.215 +03:00 [INF] Executed action OnionArcExample.WebAPI.AuthorController.GetAll (OnionArcExample.WebAPI) in 86.7677ms
+2022-09-13 20:50:31.215 +03:00 [INF] Executed endpoint 'OnionArcExample.WebAPI.AuthorController.GetAll (OnionArcExample.WebAPI)'
+2022-09-13 20:50:31.215 +03:00 [INF] The response could not be cached for this request.
+2022-09-13 20:50:31.215 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/api/nhb/Author - - - 200 - application/json;+charset=utf-8 98.2770ms
+2022-09-13 20:50:46.457 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/api/nhb/Author/GetAuthorforAccount?id=1 - -
+2022-09-13 20:50:46.457 +03:00 [INF] No cached response available for this request.
+2022-09-13 20:50:46.459 +03:00 [INF] Executing endpoint 'OnionArcExample.WebAPI.AuthorController.GetAuthorForAccount (OnionArcExample.WebAPI)'
+2022-09-13 20:50:46.459 +03:00 [INF] Route matched with {action = "GetAuthorForAccount", controller = "Author"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAuthorForAccount(Int32) on controller OnionArcExample.WebAPI.AuthorController (OnionArcExample.WebAPI).
+2022-09-13 20:50:46.473 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[OnionArcExample.Application.AuthorOperations.Queries.GetAuthorForAccount.AuthorForAccountVM, OnionArcExample.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-09-13 20:50:46.474 +03:00 [INF] Executed action OnionArcExample.WebAPI.AuthorController.GetAuthorForAccount (OnionArcExample.WebAPI) in 14.8487ms
+2022-09-13 20:50:46.474 +03:00 [INF] Executed endpoint 'OnionArcExample.WebAPI.AuthorController.GetAuthorForAccount (OnionArcExample.WebAPI)'
+2022-09-13 20:50:46.474 +03:00 [INF] The response could not be cached for this request.
+2022-09-13 20:50:46.474 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/api/nhb/Author/GetAuthorforAccount?id=1 - - - 200 - application/json;+charset=utf-8 17.4150ms
+2022-09-13 20:51:12.961 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/api/nhb/Author/GetAuthorforAccount?id=1 - -
+2022-09-13 20:51:12.961 +03:00 [INF] No cached response available for this request.
+2022-09-13 20:51:12.961 +03:00 [INF] Executing endpoint 'OnionArcExample.WebAPI.AuthorController.GetAuthorForAccount (OnionArcExample.WebAPI)'
+2022-09-13 20:51:12.961 +03:00 [INF] Route matched with {action = "GetAuthorForAccount", controller = "Author"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAuthorForAccount(Int32) on controller OnionArcExample.WebAPI.AuthorController (OnionArcExample.WebAPI).
+2022-09-13 20:53:07.769 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[OnionArcExample.Application.AuthorOperations.Queries.GetAuthorForAccount.AuthorForAccountVM, OnionArcExample.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-09-13 20:53:07.769 +03:00 [INF] Executed action OnionArcExample.WebAPI.AuthorController.GetAuthorForAccount (OnionArcExample.WebAPI) in 114807.7508ms
+2022-09-13 20:53:07.769 +03:00 [INF] Executed endpoint 'OnionArcExample.WebAPI.AuthorController.GetAuthorForAccount (OnionArcExample.WebAPI)'
+2022-09-13 20:53:07.769 +03:00 [INF] The response could not be cached for this request.
+2022-09-13 20:53:08.693 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/api/nhb/Author/GetAuthorforAccount?id=1 - - - 200 - application/json;+charset=utf-8 115732.5324ms
+2022-09-13 20:53:13.012 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/api/nhb/Author/GetAuthorforAccount?id=0 - -
+2022-09-13 20:53:13.012 +03:00 [INF] No cached response available for this request.
+2022-09-13 20:53:13.013 +03:00 [INF] Executing endpoint 'OnionArcExample.WebAPI.AuthorController.GetAuthorForAccount (OnionArcExample.WebAPI)'
+2022-09-13 20:53:13.013 +03:00 [INF] Route matched with {action = "GetAuthorForAccount", controller = "Author"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAuthorForAccount(Int32) on controller OnionArcExample.WebAPI.AuthorController (OnionArcExample.WebAPI).
+2022-09-13 20:53:17.137 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[OnionArcExample.Application.AuthorOperations.Queries.GetAuthorForAccount.AuthorForAccountVM, OnionArcExample.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-09-13 20:53:17.138 +03:00 [INF] Executed action OnionArcExample.WebAPI.AuthorController.GetAuthorForAccount (OnionArcExample.WebAPI) in 4125.5113ms
+2022-09-13 20:53:17.138 +03:00 [INF] Executed endpoint 'OnionArcExample.WebAPI.AuthorController.GetAuthorForAccount (OnionArcExample.WebAPI)'
+2022-09-13 20:53:17.139 +03:00 [INF] The response could not be cached for this request.
+2022-09-13 20:53:17.139 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/api/nhb/Author/GetAuthorforAccount?id=0 - - - 200 - application/json;+charset=utf-8 4126.9597ms

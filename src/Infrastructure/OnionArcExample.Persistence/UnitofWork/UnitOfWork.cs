@@ -33,6 +33,5 @@ namespace OnionArcExample.Persistence.UnitofWork
 
         public IStoreRepository Store => _Store ??= new StoreRepository(session);
 
-       
     }
 }

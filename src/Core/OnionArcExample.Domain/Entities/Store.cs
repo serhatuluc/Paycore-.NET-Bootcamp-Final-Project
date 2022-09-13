@@ -8,5 +8,6 @@ namespace OnionArcExample.Domain
         public virtual string Name { get; set; }
         public virtual string Address { get; set; }
         public virtual int Inventory { get; set; }
+        public virtual int AuthorId { get; set; }
     }
 }

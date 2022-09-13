@@ -30,7 +30,14 @@ namespace OnionArcExample.Persistence
                 x.Type(NHibernateUtil.String);
                 x.NotNullable(true);
             });
-           
+
+            Property(b => b.AccountId, x =>
+            {
+                x.Length(50);
+                x.Type(NHibernateUtil.Int32);
+                x.NotNullable(true);
+            });
+
 
             Table("authors");
         }

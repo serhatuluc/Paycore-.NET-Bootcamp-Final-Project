@@ -1,0 +1,5 @@
+C:\Users\Gençay\Desktop\OnionArcExample\src\Infrastructure\OnionArcExample.Persistence\bin\Debug\netcoreapp3.1\OnionArcExample.Application.dll
+C:\Users\Gençay\Desktop\OnionArcExample\src\Infrastructure\OnionArcExample.Persistence\bin\Debug\netcoreapp3.1\OnionArcExample.Domain.dll
+C:\Users\Gençay\Desktop\OnionArcExample\src\Infrastructure\OnionArcExample.Persistence\obj\Debug\netcoreapp3.1\OnionArcExample.Persistence.csprojAssemblyReference.cache
+C:\Users\Gençay\Desktop\OnionArcExample\src\Infrastructure\OnionArcExample.Persistence\obj\Debug\netcoreapp3.1\OnionArcExample.Persistence.AssemblyInfoInputs.cache
+C:\Users\Gençay\Desktop\OnionArcExample\src\Infrastructure\OnionArcExample.Persistence\obj\Debug\netcoreapp3.1\OnionArcExample.Persistence.AssemblyInfo.cs

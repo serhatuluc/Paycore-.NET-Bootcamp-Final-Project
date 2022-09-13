@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
+using OnionArcExample.Application.Common.Exceptions;
 using System;
 using System.Net;
 using System.Threading.Tasks;
@@ -22,7 +23,7 @@ namespace OnionArcExample.Application
         {
             try
             {
-                await _next(context);
+                await _next.Invoke(context);
             }
             catch (Exception ex)
             {
@@ -43,6 +44,10 @@ namespace OnionArcExample.Application
 
             switch (ex)
             {
+                case CredentialException credentialException:
+                    statusCode = HttpStatusCode.Unauthorized;
+                    errorDetails.ErrorType = "Not Found";
+                    break;
                 case NotFoundException notFoundException:
                     statusCode = HttpStatusCode.NotFound;
                     errorDetails.ErrorType = "Not Found";

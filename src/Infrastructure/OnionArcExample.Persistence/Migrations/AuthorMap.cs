@@ -38,7 +38,6 @@ namespace OnionArcExample.Persistence
                 x.NotNullable(true);
             });
 
-
             Table("authors");
         }
     }

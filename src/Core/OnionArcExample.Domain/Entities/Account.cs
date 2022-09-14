@@ -13,6 +13,5 @@ namespace OnionArcExample.Domain
         public virtual string Role { get; set; } = "Viewer";
         public virtual DateTime LastActivity { get; set; }
 
-       
     }
 }

@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk.Worker">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <UserSecretsId>dotnet-OnionArc.WorkerService-74964628-2F81-4C97-915C-B3BE573EA2D4</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="5.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\src\Core\OnionArcExample.Application\OnionArcExample.Application.csproj" />
+    <ProjectReference Include="..\src\Core\OnionArcExample.Domain\OnionArcExample.Domain.csproj" />
+    <ProjectReference Include="..\src\Presentation\OnionArcExample.WebAPI\OnionArcExample.WebAPI.csproj" />
+  </ItemGroup>
+</Project>

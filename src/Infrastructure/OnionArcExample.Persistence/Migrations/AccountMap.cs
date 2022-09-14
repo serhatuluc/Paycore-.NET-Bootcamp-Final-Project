@@ -59,7 +59,6 @@ namespace OnionArcExample.Persistence
                 x.NotNullable(true);
             });
 
-
             Table("account");
         }
     }

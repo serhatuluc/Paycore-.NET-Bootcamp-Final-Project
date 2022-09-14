@@ -5,11 +5,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\Core\OnionArcExample.Application\OnionArcExample.Application.csproj" />
+    <PackageReference Include="MailKit" Version="3.4.1" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Services\" />
+    <ProjectReference Include="..\..\Core\OnionArcExample.Application\OnionArcExample.Application.csproj" />
   </ItemGroup>
 
 </Project>

@@ -811,3 +811,14 @@ RolesAuthorizationRequirement:User.IsInRole must be true for one of the followin
 2022-09-13 20:53:17.138 +03:00 [INF] Executed endpoint 'OnionArcExample.WebAPI.AuthorController.GetAuthorForAccount (OnionArcExample.WebAPI)'
 2022-09-13 20:53:17.139 +03:00 [INF] The response could not be cached for this request.
 2022-09-13 20:53:17.139 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/api/nhb/Author/GetAuthorforAccount?id=0 - - - 200 - application/json;+charset=utf-8 4126.9597ms
+2022-09-13 23:53:49.393 +03:00 [INF] Application Is Starting
+2022-09-13 23:53:51.998 +03:00 [INF] User profile is available. Using 'C:\Users\Asus\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-09-13 23:53:52.359 +03:00 [INF] Now listening on: https://localhost:5001
+2022-09-13 23:53:52.359 +03:00 [INF] Now listening on: http://localhost:5000
+2022-09-13 23:53:52.359 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-09-13 23:53:52.359 +03:00 [INF] Hosting environment: Development
+2022-09-13 23:53:52.359 +03:00 [INF] Content root path: C:\Users\Asus\Desktop\OnionArcFinalV2\src\Presentation\OnionArcExample.WebAPI
+2022-09-13 23:53:53.517 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/index.html - -
+2022-09-13 23:53:53.643 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/index.html - - - 200 - text/html;charset=utf-8 127.8076ms
+2022-09-13 23:53:54.044 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - -
+2022-09-13 23:53:54.153 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 108.3071ms

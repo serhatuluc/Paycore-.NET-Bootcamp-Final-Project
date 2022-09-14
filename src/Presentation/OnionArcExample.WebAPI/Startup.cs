@@ -32,6 +32,7 @@ namespace OnionArcExample.WebAPI
 
             services.AddApplicationServices(Configuration);
             services.AddInfrastructureServices(Configuration);
+         
 
             // service
             services.AddResponseCaching();
